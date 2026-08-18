@@ -1,0 +1,30 @@
+### General
+**[External Tool List](http://start.me/p/L1rEYQ/osint4all)**
+**Google Fu**
+**LinkedIn**
+**Twitter**
+**Shodan**
+**Censys**
+### Emails
+**hunter.io**
+**ClearBit (browser extension)**
+**emailhippo (verification)**
+**MailAccess**
+### Breached Credentials
+**DeHashed (elite)**
+**Hashes.org**
+**pentester.com**
+### Subdomains
+**FFUF**
+**Subfinder**
+**crt.sh**
+**OWASP Amass (elite, but slow)**
+**tomnomnom/httprobe (verification)**
+**sublist3r (shit)**
+**TorBot (onion)**
+### Technologies
+**builtwith.com**
+**Wappalyzer (browser extension)**
+**whatweb**
+**Burpsuite**
+
