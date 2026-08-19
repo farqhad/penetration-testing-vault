@@ -14,8 +14,6 @@
 
 # Operating System & Service Versions (+ additional info)
 
-#### ...
-
 ```
 
 ```
@@ -28,8 +26,6 @@
 ┌──(root㉿kali)-[/home/kali]
 └─# command if needed
 ```
-
-#### Info: ...
 
 ```
 paste text or screenshot
@@ -45,8 +41,6 @@ paste text or screenshot
 ┌──(root㉿kali)-[/home/kali]
 └─# command if needed
 ```
-
-#### Info: ...
 
 ```
 paste text or screenshot

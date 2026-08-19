@@ -55,3 +55,148 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 7.89 seconds
 ```
+
+# ffuf_raw_8080
+
+```
+┌──(root㉿kali)-[~]
+└─# ffuf -c -ic -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e .php,.txt,.zip,.bak,.html -u http://192.168.57.8:8080/FUZZ -fc 404            
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://192.168.57.8:8080/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+ :: Extensions       : .php .txt .zip .bak .html 
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response status: 404
+________________________________________________
+
+.php                    [Status: 403, Size: 279, Words: 20, Lines: 10, Duration: 10ms]
+                        [Status: 200, Size: 94607, Words: 4689, Lines: 1160, Duration: 26ms]
+
+index.php               [Status: 200, Size: 94635, Words: 4689, Lines: 1160, Duration: 36ms]
+
+.html                   [Status: 403, Size: 279, Words: 20, Lines: 10, Duration: 314ms]
+
+dev                     [Status: 301, Size: 317, Words: 20, Lines: 10, Duration: 2ms]
+
+.php                    [Status: 403, Size: 279, Words: 20, Lines: 10, Duration: 19ms]
+
+.html                   [Status: 403, Size: 279, Words: 20, Lines: 10, Duration: 18ms]
+                        [Status: 200, Size: 94608, Words: 4689, Lines: 1160, Duration: 327ms]
+
+server-status           [Status: 403, Size: 279, Words: 20, Lines: 10, Duration: 12ms]
+
+:: Progress: [1323282/1323282] :: Job [1/1] :: 4347 req/sec :: Duration: [0:05:58] :: Errors: 0 ::
+
+```
+
+# ffuf_raw_80
+
+```
+┌──(root㉿kali)-[~]
+└─# ffuf -c -ic -t 200 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e .php,.txt,.zip,.bak,.html -u http://192.168.57.8:80/FUZZ -fc 404 -fc 403
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://192.168.57.8:80/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+ :: Extensions       : .php .txt .zip .bak .html 
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 200
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response status: 403
+________________________________________________
+
+                        [Status: 200, Size: 3833, Words: 926, Lines: 108, Duration: 17ms]
+
+public                  [Status: 301, Size: 313, Words: 20, Lines: 10, Duration: 4ms]
+
+src                     [Status: 301, Size: 310, Words: 20, Lines: 10, Duration: 2ms]
+
+index.php               [Status: 200, Size: 3833, Words: 926, Lines: 108, Duration: 3383ms]
+
+app                     [Status: 301, Size: 310, Words: 20, Lines: 10, Duration: 2ms]
+
+vendor                  [Status: 301, Size: 313, Words: 20, Lines: 10, Duration: 4ms]
+
+extensions              [Status: 301, Size: 317, Words: 20, Lines: 10, Duration: 2ms]
+                        [Status: 200, Size: 3833, Words: 926, Lines: 108, Duration: 334ms]
+:: Progress: [1323282/1323282] :: Job [1/1] :: 131 req/sec :: Duration: [0:11:09] :: Errors: 55 ::
+```
+
+# ffuf_raw_8080_dev
+
+```
+┌──(root㉿kali)-[~]
+└─# ffuf -c -ic -t 200 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e .php,.txt,.zip,.bak,.html -u http://192.168.57.8:8080/dev/FUZZ -fc 404        
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://192.168.57.8:8080/dev/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+ :: Extensions       : .php .txt .zip .bak .html 
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 200
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response status: 404
+________________________________________________
+
+index.php               [Status: 200, Size: 7627, Words: 843, Lines: 144, Duration: 5ms]
+
+.php                    [Status: 403, Size: 279, Words: 20, Lines: 10, Duration: 29ms]
+                        [Status: 200, Size: 7627, Words: 843, Lines: 144, Duration: 30ms]
+files                   [Status: 301, Size: 323, Words: 20, Lines: 10, Duration: 3ms]
+
+pages                   [Status: 301, Size: 323, Words: 20, Lines: 10, Duration: 1ms]
+
+forms                   [Status: 301, Size: 323, Words: 20, Lines: 10, Duration: 3ms]
+
+.html                   [Status: 403, Size: 279, Words: 20, Lines: 10, Duration: 1553ms]
+
+config                  [Status: 301, Size: 324, Words: 20, Lines: 10, Duration: 6ms]
+
+stamps                  [Status: 301, Size: 324, Words: 20, Lines: 10, Duration: 52ms]
+
+.php                    [Status: 403, Size: 279, Words: 20, Lines: 10, Duration: 29ms]
+
+.html                   [Status: 403, Size: 279, Words: 20, Lines: 10, Duration: 30ms]
+                        [Status: 200, Size: 7627, Words: 843, Lines: 144, Duration: 144ms]
+:: Progress: [1323282/1323282] :: Job [1/1] :: 187 req/sec :: Duration: [0:05:48] :: Errors: 0 ::
+
+```

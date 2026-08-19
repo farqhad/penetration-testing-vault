@@ -26,8 +26,6 @@ PORT      STATE SERVICE
 
 # Operating System & Service Versions (+ additional info)
 
-#### Debian 10; Linux Kernel 4.15-5.19
-
 ```
 ┌──(root㉿kali)-[~]
 └─# nmap -T4 -sV -sC -p 22,80,111,2049,8080,33155,36849,37197,51149 192.168.57.8
@@ -56,22 +54,105 @@ PORT      STATE SERVICE  VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
-# HTTP (80/TCP)
+# HTTP (80/TCP; 8080/TCP)
 
-### via TOOL
+### via NMAP
 
 ```
 ┌──(root㉿kali)-[/home/kali]
-└─# command if needed
+└─# nmap -T4 -sV -sC -p 22,80,111,2049,8080,33155,36849,37197,51149 192.168.57.8
+...
+80/tcp    open  http     Apache httpd 2.4.38 ((Debian))
+	|_http-server-header: Apache/2.4.38 (Debian)
+	|_http-title: Bolt - Installation error
+...
+8080/tcp  open  http     Apache httpd 2.4.38 ((Debian))
+|_http-title: PHP 7.3.27-1~deb10u1 - phpinfo()
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported:CONNECTION
+|_http-server-header: Apache/2.4.38 (Debian)
 ```
 
-#### Info: ...
+### via Browser (+ FFUF)
+#### :80
 
-```
-paste text or screenshot
-```
+##### Default Page
+
+![[Screenshot 2026-08-19 234955.png]]
+
+##### Information Disclosure
+
+![[Pasted image 20260820002140.png]]
+
+##### Information Disclosure
+
+![[Pasted image 20260820002202.png]]
+
+##### Openly available internal server files
+
+![[Pasted image 20260820002552.png]]
+
+##### Internal server error when trying to open CustomisationExtension.php
+
+![[Screenshot 2026-08-20 002606.png]]
+
+##### Openly available /app 
+
+![[Pasted image 20260820004256.png]]
+
+##### Credentials disclosed in /app/config/config.yml | DB on sqlite
+
+![[Pasted image 20260820003503.png]]
+
+##### Permission hierarchy information in /app/config/permissions.yml
+
+![[Pasted image 20260820004016.png]]
+
+##### Credentials and full configuration in /app/cache/config-cache.json
+
+![[Screenshot 2026-08-20 004400.png]]
+
+
+#### :8080
+
+![[Screenshot 2026-08-19 235305.png]]
+
+##### BoltWire Page under /dev/
+
+![[Pasted image 20260820011143.png]]
+
+##### User credentials under /dev/pages/
+
+![[Pasted image 20260820011309.png]]
+
+##### Administrator credentials in /dev/pages/member.admin
+
+![[Pasted image 20260820011431.png]]
+
+##### Information Disclosure (when accessed admin account)
+
+![[Pasted image 20260820011618.png]]
+
+##### Restricted file upload capabilities as an admin or editor
+
+![[Pasted image 20260820013333.png]]
+
+![[Screenshot 2026-08-20 013355.png]]
+
+##### Restrictions for uploading listed in Config section
+
+![[Screenshot 2026-08-20 013725.png]]
+
+### via BurpSuite
+#### :80
+![[Pasted image 20260820000851.png]]
+
+#### :8080
+
+![[Pasted image 20260820000626.png]]
 
 ---
+
 # -- Exploitation --
 
 ### via TOOL
