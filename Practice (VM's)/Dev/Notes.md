@@ -2,7 +2,7 @@
 ### Target IP: 192.168.57.8
 ### Attacker IP: 192.168.57.4
 # -- Scanning & Enumeration --
-**[x] Read [[S&E Methodology]]**
+**[x] Read [S&E Methodology](../../Theory/Reconnaissance/Scanning%20&%20Enumeration/S&E%20Methodology.md)**
 # Open Ports
 ```
 ┌──(root㉿kali)-[~]
@@ -20,7 +20,7 @@ PORT      STATE SERVICE
 51149/tcp open  unknown
 ```
 ##### Proof:
-![[Pasted image 20260818182519.png]]
+![Pasted image 20260818182519](../../assets/Pasted%20image%2020260818182519.png)
 # Operating System
 #### ...
 ```
@@ -31,6 +31,6 @@ PORT      STATE SERVICE
 ```
 
 # -- Exploitation --
-**[ ] Read [[Exploitation Methodology]]**
+**[ ] Read [Exploitation Methodology](../../Theory/Exploitation/Exploitation%20Methodology.md)**
 # -- Post-Exploitation --
-**[ ] Read [[Post-Exploitation Methodology]]**
+**[ ] Read [Post-Exploitation Methodology](../../Theory/Post-Exploitation/Post-Exploitation%20Methodology.md)**

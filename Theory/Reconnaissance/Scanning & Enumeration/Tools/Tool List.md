@@ -1,15 +1,15 @@
 ### General
-**[[NMAP]]**
-**[[MSFCONSOLE (METASPLOIT)]]**
+**[NMAP](NMAP.md)**
+**[MSFCONSOLE (METASPLOIT)](MSFCONSOLE%20(METASPLOIT).md)**
 **Shodan (OSINT - passive)**
 **Censys (OSINT - passive)**
 ### Local Network Scanning
 **arp-scan**
 **netdiscover**
 ### Vulnerability Scanning
-**[[Nikto]] (only http/https)**
+**[Nikto](Nikto.md) (only http/https)**
 **Nessus**
-![[Pasted image 20260815040142.png]]
+![Pasted image 20260815040142](../../../../assets/Pasted%20image%2020260815040142.png)
 ### Breached Credentials
 **DeHashed (elite)**
 **Hashes.org**
@@ -26,10 +26,10 @@
 **tomnomnom/httprobe (verification)**
 **sublist3r (shit)**
 ### Directory Busting / Fuzzing
-**[[FFUF]]**
+**[FFUF](FFUF.md)**
 **Feroxbuster**
 **OWASP DirBuster**
 **GoBuster**
 ### SMB / Windows Enumeration
-**[[enum4linux]]**
-**[[smbclient]]**
+**[enum4linux](enum4linux.md)**
+**[smbclient](smbclient.md)**
