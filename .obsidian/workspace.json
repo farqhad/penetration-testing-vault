@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Total Progress.md",
+                "file": "Theory/Reconnaissance/OSINT/OSINT Methodology.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Total Progress"
+              "title": "OSINT Methodology"
             }
           }
         ]
@@ -190,6 +190,8 @@
   },
   "active": "14f2b607a9fdedcb",
   "lastOpenFiles": [
+    "Theory/Post-Exploitation/Post-Exploitation Methodology.md",
+    "Theory/Exploitation/Exploitation Methodology.md",
     "Theory/Reconnaissance/Scanning & Enumeration/S&E Methodology.md",
     "Total Progress.md",
     "Practice (VM's)/Dev/Notes.md",
@@ -198,10 +200,8 @@
     "assets",
     "assets/Pasted image 20260818182519.png",
     "Scanning and Enumeration Methodology.md",
-    "Theory/Post-Exploitation/Post-Exploitation Methodology.md",
     "Theory/Exploitation/Tools/Tool List.md",
     "Theory/Exploitation/Tools/NetCat.md",
-    "Theory/Exploitation/Exploitation Methodology.md",
     "Theory/Reconnaissance/OSINT/OSINT Methodology.md",
     "Practice (VM's)/Academy/Raw Scans.md",
     "Practice (VM's)/Dev/Raw Scans.md",

@@ -26,35 +26,35 @@
 
 **1. Find out how strong their IDS is**
 
-	**1) Public Job Postings (for example hiring SOC Analysts)**
+	1) Public Job Postings (for example hiring SOC Analysts)
 
-	**2) Public DNS Records**
+	2) Public DNS Records
 
-	**3) Shodan/Censys Public Scans**
+	3) Shodan/Censys Public Scans
 
-	**4) Rent a Cheap VM and run a test scan, seeing how quick they ban you (Burner Test)**
+	4) Rent a Cheap VM and run a test scan, seeing how quick they ban you (Burner Test)
 
 **2. Scan depending on how strong the IDS is**
 
-	**1) Weak/Basic IDS (Burner test survived or older infrastructure detected)**
+	1) Weak/Basic IDS (Burner test survived or older infrastructure detected)
 
-		***- Packet Fragmentation (-f)***
+		- Packet Fragmentation (-f)
 
-		***- Decoy Scan (-D)***
+		- Decoy Scan (-D)
 
-	**2) Moderate IDS (Burner test caught after a volume/speed threshold is met or standard commercial firewalls without a dedicated SOC detected)**
+	2) Moderate IDS (Burner test caught after a volume/speed threshold is met or standard commercial firewalls without a dedicated SOC detected)
 
-		***- Low and Slow (-T0 or -T1)***
+		- Low and Slow (-T0 or -T1)
 
-		***- Proxychains***
+		- Proxychains
+		
+	3) Strict IDS (Burner test instantly banned on the very first packets or enterprise WAFs like Cloudflare/Imperva and active SOC monitoring detected)
 
-	**3) Strict IDS (Burner test instantly banned on the very first packets or enterprise WAFs like Cloudflare/Imperva and active SOC monitoring detected)**
+		- Idle Scan (-sI)
 
-		***- Idle Scan (-sI)***
+	4) Impenetrable (Active scanning is completely impossible or Zero-Trust architecture with no public ports detected)
 
-	**4) Impenetrable (Active scanning is completely impossible or Zero-Trust architecture with no public ports detected)**
-
-		***- Shodan / Censys (Passive Recon)***
+		- Shodan / Censys (Passive Recon)
 
 ### Typical errors for older, Legacy machines
 
@@ -82,19 +82,19 @@
 
 `-oKexAlgorithms=+diffie-hellman-group1-sha1 -c 3des-cbc`
 
-(Example: `ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c 3des-cbc user@IP`)**
+**(Example:** `ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c 3des-cbc user@IP`**)**
 
 ***SMBv1 / Legacy SMB Overrides:***
 
 **Modern smbclient disables SMBv1 (NT1) by default. If a Windows XP/2003 machine throws NT_STATUS_CONNECTION_RESET, force SMBv1:
 
-`smbclient -L //IP/ --option='client min protocol=NT1'`**
+`smbclient -L //IP/ --option='client min protocol=NT1'`
 
 ***HTTPS / Legacy SSL Web Servers:***
 
 **If curl or web tools throw SSL_ERROR_UNSUPPORTED_VERSION against an ancient web server, force the TLS downgrade and lower the security level:
 
-`curl -k --tlsv1.0 --ciphers DEFAULT@SECLEVEL=0 https://IP`**
+`curl -k --tlsv1.0 --ciphers DEFAULT@SECLEVEL=0 https://IP`
 
 # Handling Open Ports
 
