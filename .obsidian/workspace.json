@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practice (VM's)/Academy/Notes.md",
+                "file": "Total Progress.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notes"
+              "title": "Total Progress"
             }
           }
         ]
@@ -188,13 +188,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "44a8750d9b1cd0a2",
+  "active": "14f2b607a9fdedcb",
   "lastOpenFiles": [
+    "Practice (VM's)/Academy/Notes.md",
     "assets/Pasted image 20260813114144.png",
     "Total Progress.md",
     "assets",
     "Practice (VM's)/Dev/Notes.md",
-    "Practice (VM's)/Academy/Notes.md",
     "assets/Pasted image 20260818182519.png",
     "Theory/Reconnaissance/Scanning & Enumeration/S&E Methodology.md",
     "Scanning and Enumeration Methodology.md",
@@ -220,7 +220,6 @@
     "assets/Pasted image 20260818012346.png",
     "assets/Pasted image 20260817225538.png",
     "assets/Pasted image 20260817225405.png",
-    "assets/Pasted image 20260817225146.png",
     "Theory/Reconnaissance/Scanning & Enumeration/Tools/MSFCONSOLE (METASPLOIT).md",
     "Theory/Exploitation/Tools/MSFCONSOLE (METASPLOIT).md",
     "Theory/Exploitation/Tools/hydra.md",
