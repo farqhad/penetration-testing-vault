@@ -5,8 +5,7 @@
 ### General (always run first)
 
 - [ ] Full TCP port scan: `nmap -T4 -p- <IP>`
-- [ ] Version + default scripts + OS on the open ports: `nmap -T4 -sV -sC -O -p <ports> <IP>`
-- [ ] Once you know the services, add the vuln scripts: `nmap -T4 -sV -sC -O --script "vuln" -p <ports> <IP>`
+- [ ] Version + default scripts + OS on the open ports: `nmap -T4 -sV -sC -p <ports> <IP>`
 - [ ] Write down every service + version — this list feeds the Vulnerability Research phase
 
 ### 21 (FTP)
@@ -15,7 +14,7 @@
 - [ ] Anonymous allowed? Confirm manually: `ftp <IP>` → user `anonymous`, password anything
 - [ ] Download everything readable: `wget ftp://anonymous:anonymous@<IP>/<file>` (or `get` / `mget *` inside the session)
 - [ ] Read every single file — readable files often hand over creds, internal notes, or hints toward other services
-- [ ] Version won't resolve from nmap? Confirm it in Wireshark, then research that version for known vulns
+- [ ] Triangulate version via Wireshark, then research that version for known vulns
 
 ### 22 (SSH)
 
