@@ -6,8 +6,6 @@
 
 # -- Scanning & Enumeration --
 
-**[ ] Read [S&E Methodology](../../Theory/Reconnaissance/Scanning%20&%20Enumeration/S&E%20Methodology.md) & Follow [[S&E Checklists (Template)|Checklists]]**
-
 # Open Ports
 
 ```
@@ -37,7 +35,7 @@
 paste text or screenshot
 ```
 
-# --
+---
 
 # -- Vulnerability Research (Potential Vulnerabilities) --
 
@@ -54,11 +52,9 @@ paste text or screenshot
 paste text or screenshot
 ```
 
-# --
+---
 
 # -- Exploitation --
-
-**[ ] Read [Exploitation Methodology](../../Theory/Exploitation/Exploitation%20Methodology.md) & Follow [[Exploitation Checklists (Template)|Checklists]]**
 
 ### via TOOL
 
@@ -73,11 +69,9 @@ paste text or screenshot
 paste text or screenshot
 ```
 
-# --
+---
 
 # -- Post-Exploitation --
-
-**[ ] Read [Post-Exploitation Methodology](../../Theory/Post-Exploitation/Post-Exploitation%20Methodology.md) & Follow [[Post-Exploitation Checklists (Template)|Checklists]]**
 
 ## Privilege Escalation
 
@@ -89,5 +83,5 @@ paste text or screenshot
 
 #### ...
 
-# --
+---
 ##### NOTE IF NEEDED

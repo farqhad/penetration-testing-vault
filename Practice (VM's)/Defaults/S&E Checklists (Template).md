@@ -1,5 +1,17 @@
 # Per-Service Checklists
 
+## Lessons from failures
+
+> Not steps to tick — hard-won rules to keep in mind while you work.
+
+**1) WORDLISTS ARE IMPORTANT. DEEPER ENUMERATION IS IMPORTANT. time wasted: 2 days**
+
+**2) SNOW BLINDNESS. In a long list where most entries are noise, read every line — the one that matters hides among the ones that don't. Applies to nmap output, fuzzing results, directory/file listings, enum dumps.**
+
+**3) ALWAYS LOOK FOR CONFIG FILES. During enumeration: exposed over HTTP (backups like `.bak` / `.old` / `.php~`, open directory listings). Post-shell: on-disk for hardcoded creds that get reused elsewhere.**
+
+---
+
 > Run these top to bottom for every open port. When a step breaks, jump to [[#When Stuck →]] at the bottom.
 
 ### General (always run first)
@@ -48,3 +60,31 @@
 - [ ] Anonymous login to shares: `smbclient -L //<IP>/ -N` to list, then `smbclient //<IP>/<share> -N` (IPC$ often allows anon; C$/ADMIN$ usually don't)
 - [ ] Readable share? List and investigate, then pull everything: `prompt OFF`, `recurse ON`, `mget *`
 - [ ] `NT_STATUS_CONNECTION_RESET` / SMB1-only box? → see [[Legacy Machine Compatibility]]
+
+---
+
+# When Stuck →
+
+> Troubleshooting. You don't read this top to bottom — you jump to the relevant one when a checklist step breaks.
+
+### Can't get the service version?
+
+**Try MSFCONSOLE auxiliary modules — service version is everything.**
+
+**Still nothing? Grab it manually in Wireshark (Session Setup AndX Response shows it most of the time).**
+
+### Running low on time?
+
+**1) Run a quick & dirty, shallow scan**
+
+**2) Kick off a more thorough, deep scan**
+
+**3) Investigate the results of the first scan while the second one runs**
+
+### Legacy machine?
+
+See **[[Legacy Machine Compatibility]]** — how to spot one, and the cipher / SMB / SSL flags to force a connection.
+
+---
+
+*Stealth / IDS evasion (red-team) lives in [[Advanced - Stealth & IDS Evasion]] — not needed for internal or lab work.*

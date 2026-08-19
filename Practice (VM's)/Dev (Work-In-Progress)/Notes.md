@@ -6,8 +6,6 @@
 
 # -- Scanning & Enumeration --
 
-**[x] Read [S&E Methodology](../../Theory/Reconnaissance/Scanning%20&%20Enumeration/S&E%20Methodology.md)**
-
 # Open Ports
 
 ```
@@ -60,10 +58,49 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 # HTTP (80/TCP)
 
+### via TOOL
+
+```
+┌──(root㉿kali)-[/home/kali]
+└─# command if needed
+```
+
+#### Info: ...
+
+```
+paste text or screenshot
+```
+
+---
 # -- Exploitation --
 
-**[ ] Read [Exploitation Methodology](../../Theory/Exploitation/Exploitation%20Methodology.md)**
+### via TOOL
+
+```
+┌──(root㉿kali)-[/home/kali]
+└─# command if needed
+```
+
+#### Info: ...
+
+```
+paste text or screenshot
+```
+
+---
 
 # -- Post-Exploitation --
 
-**[ ] Read [Post-Exploitation Methodology](../../Theory/Post-Exploitation/Post-Exploitation%20Methodology.md)**
+## Privilege Escalation
+
+### PrivEsc Vectors Investigation
+
+#### ...
+
+### Applying found vectors
+
+#### ...
+
+---
+##### NOTE IF NEEDED
+
