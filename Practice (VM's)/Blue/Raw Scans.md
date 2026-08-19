@@ -1,4 +1,5 @@
 # nmap_raw
+
 ```
 Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-14 20:40 -0400
 Stats: 0:00:08 elapsed; 0 hosts completed (1 up), 1 undergoing Service Scan
@@ -45,7 +46,9 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 66.36 seconds
 ```
+
 # enum4linux_raw
+
 ```
 ┌──(kali㉿kali)-[~]
 └─$ enum4linux -a 192.168.57.5               

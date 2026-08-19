@@ -1,9 +1,15 @@
 ### Target Name: Dev
+
 ### Target IP: 192.168.57.8
+
 ### Attacker IP: 192.168.57.4
+
 # -- Scanning & Enumeration --
+
 **[x] Read [S&E Methodology](../../Theory/Reconnaissance/Scanning%20&%20Enumeration/S&E%20Methodology.md)**
+
 # Open Ports
+
 ```
 ┌──(root㉿kali)-[~]
 └─# nmap -T4 -p- 192.168.57.8
@@ -19,10 +25,15 @@ PORT      STATE SERVICE
 37197/tcp open  unknown
 51149/tcp open  unknown
 ```
+
 ##### Proof:
+
 ![Pasted image 20260818182519](../../assets/Pasted%20image%2020260818182519.png)
+
 # Operating System
+
 #### ...
+
 ```
 ┌──(root㉿kali)-[~]
 └─# nmap -T4 -sV -sC -O --script "vuln" -p 22,80,111,2049,8080,33155,36849,37197,51149 192.168.57.8
@@ -31,6 +42,9 @@ PORT      STATE SERVICE
 ```
 
 # -- Exploitation --
+
 **[ ] Read [Exploitation Methodology](../../Theory/Exploitation/Exploitation%20Methodology.md)**
+
 # -- Post-Exploitation --
+
 **[ ] Read [Post-Exploitation Methodology](../../Theory/Post-Exploitation/Post-Exploitation%20Methodology.md)**

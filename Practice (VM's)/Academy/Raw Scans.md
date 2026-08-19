@@ -1,4 +1,5 @@
 # nmap_raw
+
 ```
 ┌──(root㉿kali)-[/home/kali]
 └─# nmap -T4 -sV -sC -O -p 21,22,80 192.168.57.6
