@@ -96,7 +96,7 @@
 
 `curl -k --tlsv1.0 --ciphers DEFAULT@SECLEVEL=0 https://IP`
 
-# Handling Open Ports
+# Checklists (gonna update soon)
 
 ### 443/80 (HTTPS/HTTP)
 

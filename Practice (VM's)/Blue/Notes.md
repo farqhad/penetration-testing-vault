@@ -14,7 +14,7 @@
 
 **No longer supported!!! Bad.**
 
-# Open Ports ([](Raw%20Scans.md#nmap_raw|view%20raw%20scan))
+# Open Ports
 
 ### 135/TCP (RPC/MSRPC)
 

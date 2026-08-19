@@ -8,7 +8,7 @@
 
 ### Red-Hat/Linux
 
-# Open Ports *([](Raw%20Scans.md#nmap_raw|view%20raw%20scan))*
+# Open Ports
 
 ### 22/TCP (SSH)
 
@@ -60,7 +60,7 @@
 
 ![Pasted image 20260813115427](../../assets/Pasted%20image%2020260813115427.png)
 
-# Vulnerability Scans *([](Raw%20Scans.md#nikto_raw|view%20raw%20scan))*
+# Vulnerability Scans
 
 ### Nikto - Port 80
 

@@ -30,7 +30,6 @@ PORT   STATE SERVICE VERSION
 80/tcp open  http    Apache httpd 2.4.38 ((Debian))
 |_http-server-header: Apache/2.4.38 (Debian)
 ...
-PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
 ...
 Running: Linux 4.X|5.X

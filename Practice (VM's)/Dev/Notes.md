@@ -26,20 +26,39 @@ PORT      STATE SERVICE
 51149/tcp open  unknown
 ```
 
-##### Proof:
+# Operating System & Service Versions (+ additional info)
 
-![Pasted image 20260818182519](../../assets/Pasted%20image%2020260818182519.png)
-
-# Operating System
-
-#### ...
+#### Debian 10; Linux Kernel 4.15-5.19
 
 ```
 ┌──(root㉿kali)-[~]
-└─# nmap -T4 -sV -sC -O --script "vuln" -p 22,80,111,2049,8080,33155,36849,37197,51149 192.168.57.8
+└─# nmap -T4 -sV -sC -p 22,80,111,2049,8080,33155,36849,37197,51149 192.168.57.8
 ...
-
+PORT      STATE SERVICE  VERSION
+22/tcp    open  ssh      OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+...
+80/tcp    open  http     Apache httpd 2.4.38 ((Debian))
+	|_http-server-header: Apache/2.4.38 (Debian)
+	|_http-title: Bolt - Installation error
+...
+111/tcp   open  rpcbind  2-4 (RPC #100000)
+...
+2049/tcp  open  nfs      3-4 (RPC #100003)
+8080/tcp  open  http     Apache httpd 2.4.38 ((Debian))
+	| http-open-proxy: Potentially OPEN proxy.
+	|_Methods supported:CONNECTION
+	|_http-title: PHP 7.3.27-1~deb10u1 - phpinfo()
+	|_http-server-header: Apache/2.4.38 (Debian)
+...
+33155/tcp open  mountd   1-3 (RPC #100005)
+36849/tcp open  nlockmgr 1-4 (RPC #100021)
+37197/tcp open  mountd   1-3 (RPC #100005)
+51149/tcp open  mountd   1-3 (RPC #100005)
+...
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+
+# HTTP (80/TCP)
 
 # -- Exploitation --
 
