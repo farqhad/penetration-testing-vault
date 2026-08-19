@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "14f2b607a9fdedcb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practice (VM's)/Notes (Template).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Notes (Template)"
-            }
-          },
-          {
             "id": "5bcb9f60b169836f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practice (VM's)/Dev/Notes.md",
+                "file": "Theory/Reconnaissance/Scanning & Enumeration/S&E Methodology.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notes"
+              "title": "S&E Methodology"
             }
           }
         ]
@@ -202,20 +188,28 @@
       "bases:Create new base": false
     }
   },
-  "active": "14f2b607a9fdedcb",
+  "active": "5bcb9f60b169836f",
   "lastOpenFiles": [
+    "Practice (VM's)/Defaults/S&E Checklists.md",
+    "Practice (VM's)/Defaults/Notes (Template).md",
+    "Practice (VM's)/Defaults",
     "Theory/Reconnaissance/Scanning & Enumeration/S&E Methodology.md",
-    "Practice (VM's)/Notes (Template).md",
-    "Practice (VM's)/Academy/Notes.md",
+    "Theory/Reconnaissance/OSINT/OSINT Methodology.md",
+    "Theory/Exploitation/Exploitation Methodology.md",
+    "Theory/Post-Exploitation/Post-Exploitation Methodology.md",
+    "Theory/Reference/Legacy Machine Compatibility.md",
+    "Theory/Reference",
+    "Theory/Reconnaissance/Scanning & Enumeration/Advanced - Stealth & IDS Evasion.md",
+    "Legacy Machine Compatibility.md",
     "Practice (VM's)/Dev/Notes.md",
+    "Theory/Reconnaissance/Scanning & Enumeration/S&E Methodology 1.md",
+    "Theory/Reconnaissance/Scanning & Enumeration/Tools/S&E Methodology.md",
+    "Practice (VM's)/Academy/Notes.md",
     "Practice (VM's)/Dev/Raw Scans.md",
     "Practice (VM's)/Kioptrix/Notes.md",
     "Practice (VM's)/Blue/Notes.md",
     "Practice (VM's)/Academy/Raw Scans.md",
     "Practice (VM's)/Blue/Raw Scans.md",
-    "Theory/Reconnaissance/OSINT/OSINT Methodology.md",
-    "Theory/Post-Exploitation/Post-Exploitation Methodology.md",
-    "Theory/Exploitation/Exploitation Methodology.md",
     "Total Progress.md",
     "assets/Pasted image 20260813114144.png",
     "assets",
@@ -237,12 +231,6 @@
     "assets/Pasted image 20260818012346.png",
     "assets/Pasted image 20260817225538.png",
     "assets/Pasted image 20260817225405.png",
-    "Theory/Reconnaissance/Scanning & Enumeration/Tools/MSFCONSOLE (METASPLOIT).md",
-    "Theory/Exploitation/Tools/MSFCONSOLE (METASPLOIT).md",
-    "Theory/Exploitation/Tools/hydra.md",
-    "Theory/Reconnaissance/Scanning & Enumeration/Tools/FFUF.md",
-    "Theory/Reconnaissance/OSINT/Tools/Tool List.md",
-    "Theory/Reconnaissance/Scanning & Enumeration/Tools/Nikto.md",
     "Practice (VM's)/Academy",
     "Practice (VM's)/Blue",
     "Theory/Post-Exploitation"
