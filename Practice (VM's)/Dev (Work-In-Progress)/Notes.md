@@ -135,7 +135,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ##### Restricted file upload capabilities as an admin or editor
 
-![](assets/Pasted image 20260820013333.png]]
+![Pasted image 20260820013333](Pasted%20image%2020260820013333.png)
 
 ![Screenshot 2026-08-20 013355](Screenshot%202026-08-20%20013355.png)
 
