@@ -12,6 +12,10 @@
 
 **Censys**
 
+**Netryx-Astra-V2**
+
+**voidaccess**
+
 ### Emails
 
 **hunter.io**
