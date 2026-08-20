@@ -12,7 +12,7 @@
 
 ---
 
-> Run these top to bottom for every open port. When a step breaks, jump to [[#When Stuck →]] at the bottom.
+> Run these top to bottom for every open port. When a step breaks, jump to [#When Stuck →](#When%20Stuck%20→) at the bottom.
 
 ### General (always run first)
 
@@ -32,7 +32,7 @@
 
 - [ ] `nmap -sV -sC` — grab the OpenSSH version + protocol
 - [ ] Note the protocol version: `1.x` / `1.99` means legacy SSHv1 support → old box, expect kex/cipher issues
-- [ ] Can't connect (kex / cipher errors)? → see [[Legacy Machine Compatibility]]
+- [ ] Can't connect (kex / cipher errors)? → see [Legacy Machine Compatibility](Legacy%20Machine%20Compatibility.md)
 - [ ] Record the version; the auth-method check and brute-force viability are handled in the Exploitation phase
 
 ### 80 / 443 (HTTP / HTTPS)
@@ -59,7 +59,7 @@
 - [ ] Check for critical SMB vulns: `nmap --script "smb-vuln*"` — EternalBlue (MS17-010), SMBGhost
 - [ ] Anonymous login to shares: `smbclient -L //<IP>/ -N` to list, then `smbclient //<IP>/<share> -N` (IPC$ often allows anon; C$/ADMIN$ usually don't)
 - [ ] Readable share? List and investigate, then pull everything: `prompt OFF`, `recurse ON`, `mget *`
-- [ ] `NT_STATUS_CONNECTION_RESET` / SMB1-only box? → see [[Legacy Machine Compatibility]]
+- [ ] `NT_STATUS_CONNECTION_RESET` / SMB1-only box? → see [Legacy Machine Compatibility](Legacy%20Machine%20Compatibility.md)
 
 ---
 
@@ -83,8 +83,8 @@
 
 ### Legacy machine?
 
-See **[[Legacy Machine Compatibility]]** — how to spot one, and the cipher / SMB / SSL flags to force a connection.
+See **[Legacy Machine Compatibility](Legacy%20Machine%20Compatibility.md)** — how to spot one, and the cipher / SMB / SSL flags to force a connection.
 
 ---
 
-*Stealth / IDS evasion (red-team) lives in [[Advanced - Stealth & IDS Evasion]] — not needed for internal or lab work.*
+*Stealth / IDS evasion (red-team) lives in [Advanced - Stealth & IDS Evasion](Advanced%20-%20Stealth%20&%20IDS%20Evasion.md) — not needed for internal or lab work.*
