@@ -76,7 +76,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ### via Browser (+ FFUF)
 ## :80
 
-##### Default Page
+##### Default Page; Information Disclosure
 
 ![Screenshot 2026-08-19 234955](../../assets/Screenshot%202026-08-19%20234955.png)
 
@@ -114,6 +114,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## :8080
 
+##### Default Page; Information Disclosure
 ![Screenshot 2026-08-19 235305](../../assets/Screenshot%202026-08-19%20235305.png)
 
 ##### BoltWire Page under /dev/

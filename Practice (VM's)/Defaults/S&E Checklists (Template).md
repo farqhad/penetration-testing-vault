@@ -46,13 +46,14 @@
   `ffuf -c -ic -t 200 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e .php,.txt,.html,.bak,.zip -u http://<IP>/FUZZ -fc 403,404`
   *(note: `-fc 403,404` in one flag — passing `-fc 403 -fc 404` as two flags makes ffuf only apply the last one)*
 - Results thin / box feels empty? Re-run with a **bigger** wordlist before assuming there's nothing there
-- [ ] Investigate every path found, manually
-- [ ] Found a web app? Pin its exact version (login page, `/README`, `/ChangeLog`) and look up known vulns
+- [ ] Found a web app? Pin its exact version (login page, `/README`, `/ChangeLog`) 
 - [ ] Watch for open directory listings — they can expose source, SQL dumps, backups, config files
 - [ ] Second web port (8080 etc.)? Treat it as its own separate app — enumerate it independently
 - [ ] Scan flags `http-open-proxy` on a web port? Test if it really forwards: `curl -x http://<IP>:<port> http://example.com`. External page comes back = real open proxy (can tunnel requests, even to the box's own `127.0.0.1` services); nothing back = false positive, drop it
 - [ ] Run Nikto
 - [ ] Burp: intercept, read the responses, send to Repeater to poke other requests
+- [ ] Look up known vulnerabilities
+- [ ] Investigate every path found, manually
 
 ### 139 / 445 (SMB)
 
