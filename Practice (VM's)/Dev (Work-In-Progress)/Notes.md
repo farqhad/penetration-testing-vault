@@ -74,7 +74,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
 ### via Browser (+ FFUF)
-#### :80
+## :80
 
 ##### Default Page
 
@@ -112,8 +112,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ![Screenshot 2026-08-20 004400](../../assets/Screenshot%202026-08-20%20004400.png)
 
-
-#### :8080
+## :8080
 
 ![Screenshot 2026-08-19 235305](../../assets/Screenshot%202026-08-19%20235305.png)
 
@@ -145,10 +144,15 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ### via BurpSuite
 
-#### :80
+## :80
+
+#### Information Disclosure
+
 ![Pasted image 20260820000851](../../assets/Pasted%20image%2020260820000851.png)
 
-#### :8080
+## :8080
+
+#### Information Disclosure
 
 ![Pasted image 20260820000626](../../assets/Pasted%20image%2020260820000626.png)
 

@@ -32,7 +32,7 @@
 
 - [ ] `nmap -sV -sC` — grab the OpenSSH version + protocol
 - [ ] Note the protocol version: `1.x` / `1.99` means legacy SSHv1 support → old box, expect kex/cipher issues
-- [ ] Can't connect (kex / cipher errors)? → see [Legacy Machine Compatibility](Legacy%20Machine%20Compatibility.md)
+- Can't connect (kex / cipher errors)? → see [Legacy Machine Compatibility](Legacy%20Machine%20Compatibility.md)
 - [ ] Record the version; the auth-method check and brute-force viability are handled in the Exploitation phase
 
 ### 80 / 443 (HTTP / HTTPS)
@@ -45,7 +45,7 @@
 - [ ] Directory / file fuzz — use **`directory-list-2.3-medium`**, NOT small (that's the 2-day lesson):
   `ffuf -c -ic -t 200 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e .php,.txt,.html,.bak,.zip -u http://<IP>/FUZZ -fc 403,404`
   *(note: `-fc 403,404` in one flag — passing `-fc 403 -fc 404` as two flags makes ffuf only apply the last one)*
-- [ ] Results thin / box feels empty? Re-run with a **bigger** wordlist before assuming there's nothing there
+- Results thin / box feels empty? Re-run with a **bigger** wordlist before assuming there's nothing there
 - [ ] Investigate every path found, manually
 - [ ] Found a web app? Pin its exact version (login page, `/README`, `/ChangeLog`) and look up known vulns
 - [ ] Watch for open directory listings — they can expose source, SQL dumps, backups, config files
