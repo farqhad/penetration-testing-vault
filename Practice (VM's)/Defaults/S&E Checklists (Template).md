@@ -49,6 +49,8 @@
 - [ ] Investigate every path found, manually
 - [ ] Found a web app? Pin its exact version (login page, `/README`, `/ChangeLog`) and look up known vulns
 - [ ] Watch for open directory listings — they can expose source, SQL dumps, backups, config files
+- [ ] Second web port (8080 etc.)? Treat it as its own separate app — enumerate it independently
+- [ ] Scan flags `http-open-proxy` on a web port? Test if it really forwards: `curl -x http://<IP>:<port> http://example.com`. External page comes back = real open proxy (can tunnel requests, even to the box's own `127.0.0.1` services); nothing back = false positive, drop it
 - [ ] Run Nikto
 - [ ] Burp: intercept, read the responses, send to Repeater to poke other requests
 
@@ -59,7 +61,19 @@
 - [ ] Check for critical SMB vulns: `nmap --script "smb-vuln*"` — EternalBlue (MS17-010), SMBGhost
 - [ ] Anonymous login to shares: `smbclient -L //<IP>/ -N` to list, then `smbclient //<IP>/<share> -N` (IPC$ often allows anon; C$/ADMIN$ usually don't)
 - [ ] Readable share? List and investigate, then pull everything: `prompt OFF`, `recurse ON`, `mget *`
-- [ ] `NT_STATUS_CONNECTION_RESET` / SMB1-only box? → see [Legacy Machine Compatibility](Legacy%20Machine%20Compatibility.md)
+- `NT_STATUS_CONNECTION_RESET` / SMB1-only box? → see [Legacy Machine Compatibility](Legacy%20Machine%20Compatibility.md)
+
+### 111 / 2049 (RPC / NFS)
+
+> rpcbind (111) is a switchboard mapping RPC program numbers to ports; NFS (2049) + the random high ports (mountd, nlockmgr) are all one NFS subsystem. Reference, not a step.
+
+- [ ] Note the NFS version from the scan (this comes from the initial `-sV` scan, before anything else) — **v3 present = the weak, trusting model**, which is usually what makes it exploitable
+- [ ] Query the switchboard: `rpcinfo <IP>` — dumps every registered RPC program, version, and port (no auth needed). Confirms NFS + mountd are present
+- [ ] List the exported shares: `showmount -e <IP>` — THE key NFS command. `*` on the right = any client can mount (jackpot); an IP/range = restricted
+- [ ] Mount it: `mkdir /mnt/nfs && sudo mount -t nfs <IP>:/export/path /mnt/nfs` — stubborn? force the weak version with `-o vers=3`
+- [ ] Loot the mounted share — creds, SSH keys, configs, anything readable (`cd /mnt/nfs`)
+- [ ] Can't read a file (owned by another UID)? NFSv3 trusts whatever UID your client claims, so **become that UID**: on YOUR box (you're root there) `sudo useradd -u <UID> faker`, then `sudo su faker`, then read the file — server sees the matching number and hands it over
+- [ ] Export shows `no_root_squash`? Root privesc — the shape: mount as root (your root = real root on the share), copy a shell binary onto it, `sudo chown root:root <bin>` + `sudo chmod u+s <bin>` (SUID bit = runs as its owner root), then execute it from a foothold shell ON the target → root. (Needs a compiled shell binary + an existing foothold; flesh out when you hit a real one)
 
 ---
 
