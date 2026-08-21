@@ -200,3 +200,87 @@ stamps                  [Status: 301, Size: 324, Words: 20, Lines: 10, Duration:
 :: Progress: [1323282/1323282] :: Job [1/1] :: 187 req/sec :: Duration: [0:05:48] :: Errors: 0 ::
 
 ```
+
+# nikto_raw_80
+
+```
+┌──(root㉿kali)-[~]
+└─# nikto -h 192.168.57.8     
+- Nikto v2.6.0
+---------------------------------------------------------------------------
++ Target IP:          192.168.57.8
++ Target Hostname:    192.168.57.8
++ Target Port:        80
++ Platform:           Linux/Unix
++ Start Time:         2026-08-21 12:06:06 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.38 (Debian)
++ ERROR: Failed to check for updates: 403
++ No CGI Directories found (use '-C all' to force check all possible dirs). CGI tests skipped.
++ [013587] /: Suggested security header missing: permissions-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy
++ [013587] /: Suggested security header missing: content-security-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
++ [013587] /: Suggested security header missing: referrer-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
++ [013587] /: Suggested security header missing: x-content-type-options. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
++ [013587] /: Suggested security header missing: strict-transport-security. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
++ [600050] Apache/2.4.38 appears to be outdated (current is at least 2.4.66).
++ [999967] /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ [750500] /app/: Directory indexing found.
++ [001563] /app/: This might be interesting.
++ [999100] /public/: Uncommon header(s) 'x-debug-token' found, with contents: ecce77.
++ [750500] /src/: Directory indexing found.
++ [003584] /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/
+```
+
+# rpcinfo_raw
+
+```
+┌──(root㉿kali)-[~]
+└─# rpcinfo 192.168.57.8                  
+   program version netid     address                service    owner
+    100000    4    tcp6      ::.0.111               portmapper superuser
+    100000    3    tcp6      ::.0.111               portmapper superuser
+    100000    4    udp6      ::.0.111               portmapper superuser
+    100000    3    udp6      ::.0.111               portmapper superuser
+    100000    4    tcp       0.0.0.0.0.111          portmapper superuser
+    100000    3    tcp       0.0.0.0.0.111          portmapper superuser
+    100000    2    tcp       0.0.0.0.0.111          portmapper superuser
+    100000    4    udp       0.0.0.0.0.111          portmapper superuser
+    100000    3    udp       0.0.0.0.0.111          portmapper superuser
+    100000    2    udp       0.0.0.0.0.111          portmapper superuser
+    100000    4    local     /run/rpcbind.sock      portmapper superuser
+    100000    3    local     /run/rpcbind.sock      portmapper superuser
+    100005    1    udp       0.0.0.0.209.81         mountd     superuser
+    100005    1    tcp       0.0.0.0.220.79         mountd     superuser
+    100005    1    udp6      ::.168.104             mountd     superuser
+    100005    1    tcp6      ::.212.117             mountd     superuser
+    100005    2    udp       0.0.0.0.208.34         mountd     superuser
+    100005    2    tcp       0.0.0.0.217.217        mountd     superuser
+    100005    2    udp6      ::.130.192             mountd     superuser
+    100005    2    tcp6      ::.182.87              mountd     superuser
+    100005    3    udp       0.0.0.0.145.229        mountd     superuser
+    100005    3    tcp       0.0.0.0.214.175        mountd     superuser
+    100005    3    udp6      ::.169.241             mountd     superuser
+    100005    3    tcp6      ::.183.163             mountd     superuser
+    100003    3    tcp       0.0.0.0.8.1            nfs        superuser
+    100003    4    tcp       0.0.0.0.8.1            nfs        superuser
+    100227    3    tcp       0.0.0.0.8.1            nfs_acl    superuser
+    100003    3    udp       0.0.0.0.8.1            nfs        superuser
+    100227    3    udp       0.0.0.0.8.1            nfs_acl    superuser
+    100003    3    tcp6      ::.8.1                 nfs        superuser
+    100003    4    tcp6      ::.8.1                 nfs        superuser
+    100227    3    tcp6      ::.8.1                 nfs_acl    superuser
+    100003    3    udp6      ::.8.1                 nfs        superuser
+    100227    3    udp6      ::.8.1                 nfs_acl    superuser
+    100021    1    udp       0.0.0.0.191.252        nlockmgr   superuser
+    100021    3    udp       0.0.0.0.191.252        nlockmgr   superuser
+    100021    4    udp       0.0.0.0.191.252        nlockmgr   superuser
+    100021    1    tcp       0.0.0.0.169.103        nlockmgr   superuser
+    100021    3    tcp       0.0.0.0.169.103        nlockmgr   superuser
+    100021    4    tcp       0.0.0.0.169.103        nlockmgr   superuser
+    100021    1    udp6      ::.234.30              nlockmgr   superuser
+    100021    3    udp6      ::.234.30              nlockmgr   superuser
+    100021    4    udp6      ::.234.30              nlockmgr   superuser
+    100021    1    tcp6      ::.180.175             nlockmgr   superuser
+    100021    3    tcp6      ::.180.175             nlockmgr   superuser
+    100021    4    tcp6      ::.180.175             nlockmgr   superuser
+```

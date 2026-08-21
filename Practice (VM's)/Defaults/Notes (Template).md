@@ -33,7 +33,7 @@ paste text or screenshot
 
 ---
 
-# -- Vulnerability Research (Potential Vulnerabilities) --
+# -- Version Research (Potential Vulnerabilities) --
 
 ### via TOOL
 

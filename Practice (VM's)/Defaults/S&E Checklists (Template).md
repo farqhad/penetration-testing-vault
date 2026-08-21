@@ -22,18 +22,17 @@
 
 ### 21 (FTP)
 
+- [ ] Triangulate version via Wireshark, then research that version for known vulnerabilities
 - [ ] `nmap -sV -sC` — the `ftp-anon` script auto-checks anonymous login and lists the root directory
 - [ ] Anonymous allowed? Confirm manually: `ftp <IP>` → user `anonymous`, password anything
 - [ ] Download everything readable: `wget ftp://anonymous:anonymous@<IP>/<file>` (or `get` / `mget *` inside the session)
 - [ ] Read every single file — readable files often hand over creds, internal notes, or hints toward other services
-- [ ] Triangulate version via Wireshark, then research that version for known vulns
 
 ### 22 (SSH)
 
 - [ ] `nmap -sV -sC` — grab the OpenSSH version + protocol
-- [ ] Note the protocol version: `1.x` / `1.99` means legacy SSHv1 support → old box, expect kex/cipher issues
+- Note the protocol version: `1.x` / `1.99` means legacy SSHv1 support → old box, expect kex/cipher issues
 - Can't connect (kex / cipher errors)? → see [Legacy Machine Compatibility](Legacy%20Machine%20Compatibility.md)
-- [ ] Record the version; the auth-method check and brute-force viability are handled in the Exploitation phase
 
 ### 80 / 443 (HTTP / HTTPS)
 
@@ -42,6 +41,7 @@
 - [ ] View the page source
 - [ ] Hit the error pages for version / info leaks — 404 and 403 pages often disclose the exact server version
 - [ ] Check the response headers (Burp, or `curl -I`) — the `Server` header often reveals the exact version
+- [ ] Look up known vulnerabilities
 - [ ] Directory / file fuzz — use **`directory-list-2.3-medium`**, NOT small (that's the 2-day lesson):
   `ffuf -c -ic -t 200 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e .php,.txt,.html,.bak,.zip -u http://<IP>/FUZZ -fc 403,404`
   *(note: `-fc 403,404` in one flag — passing `-fc 403 -fc 404` as two flags makes ffuf only apply the last one)*
@@ -52,7 +52,6 @@
 - [ ] Scan flags `http-open-proxy` on a web port? Test if it really forwards: `curl -x http://<IP>:<port> http://example.com`. External page comes back = real open proxy (can tunnel requests, even to the box's own `127.0.0.1` services); nothing back = false positive, drop it
 - [ ] Run Nikto
 - [ ] Burp: intercept, read the responses, send to Repeater to poke other requests
-- [ ] Look up known vulnerabilities
 - [ ] Investigate every path found, manually
 
 ### 139 / 445 (SMB)
