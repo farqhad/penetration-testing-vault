@@ -345,14 +345,21 @@ statd:x:108:65534::/var/lib/nfs:/usr/sbin/nologin
 
 ### via common sense
 
-**The id_rsa in archive available via NFS - passwordless ssh connection;
-Username? someone who signs as `-jp`;
-`jp@192.168.57.8` doesn't work;
-Local File Inclusion exploit on BoltWire web server -> list of usernames;
-one of the usernames -> jeanpaul (matches jp);
-attempt on `jeanpaul@192.168.57.8` works, but requires a passphrase;
-previously gathered passwords: `java101`, `I_love_java`;
-`java101` -> fail, `I_love_java` -> successful login**
+**The id_rsa in archive available via NFS - passwordless ssh connection;**
+
+**Username? someone who signs as `-jp`;**
+
+**`jp@192.168.57.8` doesn't work;**
+
+**Local File Inclusion exploit on BoltWire web server -> list of usernames;**
+
+**one of the usernames -> jeanpaul (matches jp);**
+
+**attempt on `jeanpaul@192.168.57.8` works, but requires a passphrase;**
+
+**previously gathered passwords: `java101`, `I_love_java`;**
+
+**`java101` -> fail, `I_love_java` -> successful login**
 
 ### via CLI
 
