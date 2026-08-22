@@ -294,18 +294,18 @@ Apache 2.4.17 < 2.4.38 - 'apache2ctl graceful' 'logrotate' Local Privilege Escal
 BoltWire 6.03 - Local File Inclusion
 ```
 
-![](../../../Pasted%20image%2020260821183859.png)
+![](../../assets/Pasted%20image%2020260821183859.png)
 ### via Browser
 
 #### Apache 2.4.38
 
-![](../../../Pasted%20image%2020260821183227.png)
+![](../../assets/Pasted%20image%2020260821183227.png)
 
 #### BoltWire 6.03
 
 ##### Local File Inclusion - applied
 
-![](../../../Pasted%20image%2020260821184108.png)
+![](../../assets/Pasted%20image%2020260821184108.png)
 
 ```
 root:x:0:0:root:/root:/bin/bash  
