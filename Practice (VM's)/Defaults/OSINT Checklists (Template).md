@@ -1,4 +1,3 @@
-# OSINT Checklists
 
 > External recon on the target organisation — work through each area top to bottom. Findings feed forward: names → usernames → emails → breaches; domains → live hosts → tech.
 
