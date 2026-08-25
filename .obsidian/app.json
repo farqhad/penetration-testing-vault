@@ -6,5 +6,6 @@
     "downscalePercent": 100
   },
   "attachmentFolderPath": "./assets",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "spellcheck": false
 }

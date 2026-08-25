@@ -412,14 +412,4 @@ uid=1000(jeanpaul) gid=1000(jeanpaul) groups=1000(jeanpaul),24(cdrom),25(floppy)
 
 ## Privilege Escalation
 
-### PrivEsc Vectors Investigation
-
-#### ...
-
-### Applying found vectors
-
-#### ...
-
----
-##### NOTE IF NEEDED
-
+##### Ended up watching the walkthrough, should've just ran `sudo -l` and checked against GTFOBINS. Added the steps to checklist template for next time
