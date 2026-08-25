@@ -24,7 +24,7 @@
 
 - [x] `nmap -sV -sC` — grab the OpenSSH version + protocol
 - Note the protocol version: `1.x` / `1.99` means legacy SSHv1 support → old box, expect kex/cipher issues
-- Can't connect (kex / cipher errors)? → see [Legacy Machine Compatibility](Legacy%20Machine%20Compatibility.md)
+- Can't connect (kex / cipher errors)? → see [Legacy Machine Compatibility](../../Theory/Reference/Legacy%20Machine%20Compatibility.md)
 
 ### 80 / 443 (HTTP / HTTPS)
 
@@ -80,8 +80,8 @@
 
 ### Legacy machine?
 
-See **[Legacy Machine Compatibility](Legacy%20Machine%20Compatibility.md)** — how to spot one, and the cipher / SMB / SSL flags to force a connection.
+See **[Legacy Machine Compatibility](../../Theory/Reference/Legacy%20Machine%20Compatibility.md)** — how to spot one, and the cipher / SMB / SSL flags to force a connection.
 
 ---
 
-*Stealth / IDS evasion (red-team) lives in [Advanced - Stealth & IDS Evasion](Advanced%20-%20Stealth%20&%20IDS%20Evasion.md) — not needed for internal or lab work.*
+*Stealth / IDS evasion (red-team) lives in [Advanced - Stealth & IDS Evasion](../../Theory/Reconnaissance/Scanning%20&%20Enumeration/Advanced%20-%20Stealth%20&%20IDS%20Evasion.md) — not needed for internal or lab work.*

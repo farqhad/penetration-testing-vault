@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practice (VM's)/Dev/Notes.md",
-                "mode": "preview",
+                "file": "Practice (VM's)/Butler/Notes.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -40,7 +40,10 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -176,6 +179,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -184,12 +188,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5bcb9f60b169836f",
+  "active": "44a8750d9b1cd0a2",
   "lastOpenFiles": [
-    "Practice (VM's)/Defaults/Post-Exploitation Checklists (Template).md",
-    "Practice (VM's)/Defaults/Exploitation Checklists (Template).md",
-    "Practice (VM's)/Dev/Post-Exploitation Checklists.md",
+    "assets/Pasted image 20260825230503.png",
+    "Practice (VM's)/Butler/assets",
+    "assets/Pasted image 20260825225525.png",
+    "assets/Pasted image 20260821184108.png",
+    "Practice (VM's)/Butler/Notes.md",
+    "Practice (VM's)/Butler/Exploitation Checklists.md",
     "Practice (VM's)/Dev/Notes.md",
+    "Practice (VM's)/Butler/Post-Exploitation Checklists.md",
+    "assets/Screenshot 2026-08-17 221048.png",
+    "assets/Screenshot 2026-08-20 013725.png",
+    "assets/Pasted image 20260813114144.png",
+    "Practice (VM's)/Butler/assets/Pasted image 20260825230002.png",
+    "Practice (VM's)/Butler/Raw Scans.md",
+    "Practice (VM's)/Butler/S&E Checklists.md",
+    "Practice (VM's)/Butler/OSINT Checklists.md",
+    "Practice (VM's)/Defaults/Exploitation Checklists (Template).md",
+    "Practice (VM's)/Butler",
+    "Practice (VM's)/Defaults/Post-Exploitation Checklists (Template).md",
+    "Practice (VM's)/Dev/Post-Exploitation Checklists.md",
     "Practice (VM's)/Dev/Raw Scans.md",
     "Total Progress.md",
     "Practice (VM's)/Defaults/Notes (Template).md",
@@ -207,26 +226,13 @@
     "Theory/Reconnaissance/Scanning & Enumeration/Advanced - Stealth & IDS Evasion.md",
     "Legacy Machine Compatibility.md",
     "Theory/Reconnaissance/Scanning & Enumeration/S&E Methodology 1.md",
-    "Theory/Reconnaissance/Scanning & Enumeration/Tools/S&E Methodology.md",
-    "Practice (VM's)/Kioptrix/Notes.md",
-    "Practice (VM's)/Academy/Raw Scans.md",
-    "assets/Pasted image 20260813114144.png",
     "assets",
     "assets/Pasted image 20260818182519.png",
-    "Scanning and Enumeration Methodology.md",
-    "Theory/Exploitation/Tools/Tool List.md",
-    "Theory/Exploitation/Tools/NetCat.md",
-    "Practice (VM's)/Untitled/Untitled.md",
     "Practice (VM's)/Dev",
     "Theory/Post-Exploitation/Tools",
     "assets/Pasted image 20260818130407.png",
     "assets/Pasted image 20260818130219.png",
     "assets/Screenshot 2026-08-18 125853.png",
-    "assets/Pasted image 20260818125141.png",
-    "assets/Pasted image 20260818125004.png",
-    "assets/Pasted image 20260818012346.png",
-    "assets/Pasted image 20260817225538.png",
-    "assets/Pasted image 20260817225405.png",
     "Practice (VM's)/Academy",
     "Practice (VM's)/Blue",
     "Theory/Post-Exploitation"

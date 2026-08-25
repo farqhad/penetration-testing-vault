@@ -50,7 +50,7 @@
 
 **via metasploit (auxiliary/scanner/smb/smb_version): SMB 2.1**
 
-![](file:///C:/Users/Farhad/Pictures/Screenshots/Screenshot%202026-08-15%20025752.png)
+![file:///C:/Users/Farhad/Pictures/Screenshots/Screenshot 2026-08-15 025752.png](file:///C:/Users/Farhad/Pictures/Screenshots/Screenshot%202026-08-15%20025752.png)
 
 **via Wireshark: SMB2 (as in 2.x)**
 

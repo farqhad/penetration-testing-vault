@@ -16,8 +16,8 @@
 
 ### General (always run first)
 
-- [ ] Full TCP port scan: `nmap -T4 -p- <IP>`
-- [ ] Version + default scripts + OS on the open ports: `nmap -T4 -sV -sC -p <ports> <IP>`
+- [x] Full TCP port scan: `nmap -T4 -p- <IP>`
+- [x] Version + default scripts + OS on the open ports: `nmap -T4 -sV -sC -p <ports> <IP>`
 - [ ] Write down every service + version — this list feeds the Vulnerability Research phase
 
 ### 21 (FTP)
