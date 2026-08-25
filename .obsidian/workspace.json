@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f9444734cac89342",
+        "id": "e50a5904805de58f",
         "type": "tabs",
         "children": [
           {
-            "id": "5bcb9f60b169836f",
+            "id": "bcda61daee609e62",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -188,19 +188,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "44a8750d9b1cd0a2",
+  "active": "bcda61daee609e62",
   "lastOpenFiles": [
-    "assets/Pasted image 20260825230503.png",
+    "Practice (VM's)/Butler/assets/Pasted image 20260825231523.png",
+    "Practice (VM's)/Butler/Notes.md",
+    "assets/Pasted image 20260825231707.png",
     "Practice (VM's)/Butler/assets",
+    "Practice (VM's)/Dev/Notes.md",
+    "assets/Pasted image 20260813114144.png",
+    "assets/Screenshot 2026-08-20 013725.png",
+    "Practice (VM's)/123",
+    "assets/Pasted image 20260825230503.png",
     "assets/Pasted image 20260825225525.png",
     "assets/Pasted image 20260821184108.png",
-    "Practice (VM's)/Butler/Notes.md",
     "Practice (VM's)/Butler/Exploitation Checklists.md",
-    "Practice (VM's)/Dev/Notes.md",
     "Practice (VM's)/Butler/Post-Exploitation Checklists.md",
     "assets/Screenshot 2026-08-17 221048.png",
-    "assets/Screenshot 2026-08-20 013725.png",
-    "assets/Pasted image 20260813114144.png",
     "Practice (VM's)/Butler/assets/Pasted image 20260825230002.png",
     "Practice (VM's)/Butler/Raw Scans.md",
     "Practice (VM's)/Butler/S&E Checklists.md",
@@ -230,11 +233,7 @@
     "assets/Pasted image 20260818182519.png",
     "Practice (VM's)/Dev",
     "Theory/Post-Exploitation/Tools",
-    "assets/Pasted image 20260818130407.png",
-    "assets/Pasted image 20260818130219.png",
-    "assets/Screenshot 2026-08-18 125853.png",
     "Practice (VM's)/Academy",
-    "Practice (VM's)/Blue",
-    "Theory/Post-Exploitation"
+    "Practice (VM's)/Blue"
   ]
 }

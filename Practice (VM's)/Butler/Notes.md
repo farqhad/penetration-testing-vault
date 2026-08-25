@@ -70,5 +70,4 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ## via Browser (+ FFUF)
 
 ### robots.txt page (1 disallowed entry)
-![Pasted image 20260825230503](Pasted%20image%2020260825230503.png)
-
+![](../../assets/Pasted%20image%2020260825231707.png)
