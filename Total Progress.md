@@ -36,7 +36,7 @@ PNPT Exam [0%]
 
 [░░░░░░░░░░]
 
-### 3. Web & API Exploitation
+### 3. Web & API Exploitation (PWPE)
 
 Practical Bug Bounty Course [0%]
 
