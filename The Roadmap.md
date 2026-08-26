@@ -9,7 +9,7 @@
 
 - **PEH Course** · *(reading: Computer Networks — Tanenbaum)*
 
-### 🎯 → PJPT
+### 🎯 → PJPT Certification
 
 ---
 
@@ -20,19 +20,19 @@
 - **Windows PrivEsc Course** · *(reading: Modern Operating Systems — Tanenbaum)*
 - **Linux PrivEsc Course** · *(continue: Modern Operating Systems — Tanenbaum)*
 
-### 🎯 → PNPT
-
----
-
-## Phase 3 — Bridge to Web
-
-- **JavaScript Crash Course** · *(< 1 week, basics only)*
+### 🎯 → PNPT Certification
 
 ---
 
 ## ⚡ Standalone Block — Offensive Python
 
 - **Black Hat Python** (Seitz) · *active, hands-on*
+
+---
+ 
+## Phase 3 — Bridge to Web
+
+- **JavaScript Crash Course** · *(< 1 week, basics only)*
 
 ---
 
@@ -43,7 +43,7 @@
 - **Practical API Hacking Course**
 - **Advanced Web Hacking Course**
 
-### 🎯 → PWPE
+### 🎯 → PWPE Certification
 
 ---
 
@@ -51,7 +51,7 @@
 
 - **Proving Grounds VMs + HTB / THM VMs** · *practice*
 
-### 🎯 → OSCP
+### 🎯 → OSCP Certification
 
 ---
 
@@ -67,4 +67,4 @@
 
 ## Phase 6 — Advanced Offensive Security
 
-### 🎯 → OSEP · OSWE · OSED *(gonna add details later)*
+### 🎯 → OSEP · OSWE · OSED Certifications *(gonna add details later)*
