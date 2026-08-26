@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practice (VM's)/Butler/Notes.md",
+                "file": "Practice (VM's)/Butler (Work In Progress)/Notes.md",
                 "mode": "source",
                 "source": false
               },
@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practice (VM's)/Butler/Raw Scans.md",
+                "file": "Practice (VM's)/Butler (Work In Progress)/Raw Scans.md",
                 "mode": "source",
                 "source": false
               },
@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practice (VM's)/Butler/S&E Checklists.md",
+                "file": "Practice (VM's)/Butler (Work In Progress)/S&E Checklists.md",
                 "mode": "source",
                 "source": false
               },
@@ -216,13 +216,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bcda61daee609e62",
+  "active": "44a8750d9b1cd0a2",
   "lastOpenFiles": [
     "assets/Pasted image 20260826204446.png",
     "Theory/Reconnaissance/Scanning & Enumeration/Tools/smbclient.md",
-    "Practice (VM's)/Butler/Notes.md",
-    "Practice (VM's)/Butler/S&E Checklists.md",
-    "Practice (VM's)/Butler/Raw Scans.md",
+    "Practice (VM's)/Butler (Work In Progress)/Notes.md",
+    "Practice (VM's)/Butler (Work In Progress)/S&E Checklists.md",
+    "Practice (VM's)/Butler (Work In Progress)/Raw Scans.md",
     "assets/Pasted image 20260826203720.png",
     "Theory/Reconnaissance/Scanning & Enumeration/Tools/FFUF.md",
     "assets/Pasted image 20260825232118.png",
@@ -236,12 +236,12 @@
     "assets/Pasted image 20260825230503.png",
     "assets/Pasted image 20260825225525.png",
     "assets/Pasted image 20260821184108.png",
-    "Practice (VM's)/Butler/Exploitation Checklists.md",
-    "Practice (VM's)/Butler/Post-Exploitation Checklists.md",
+    "Practice (VM's)/Butler (Work In Progress)/Exploitation Checklists.md",
+    "Practice (VM's)/Butler (Work In Progress)/Post-Exploitation Checklists.md",
     "assets/Screenshot 2026-08-17 221048.png",
     "Practice (VM's)/Butler/OSINT Checklists.md",
     "Practice (VM's)/Defaults/Exploitation Checklists (Template).md",
-    "Practice (VM's)/Butler",
+    "Practice (VM's)/Butler (Work In Progress)",
     "Practice (VM's)/Defaults/Post-Exploitation Checklists (Template).md",
     "Practice (VM's)/Dev/Post-Exploitation Checklists.md",
     "Practice (VM's)/Dev/Raw Scans.md",
