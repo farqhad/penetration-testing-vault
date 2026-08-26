@@ -1,39 +1,70 @@
-### - PEH Course +  Computer Networks (Tanenbaum)
+# 🗺️ The Roadmap
+
+> Cert milestones are marked **`🎯`** — they're checkpoints earned after
+> completing the steps above them.
 
 ---
-## -- PJPT Certification --
----
 
-### - OSINT Course 
-### - External Pentest Course 
-### - Win PrivEsc Course + Modern Operating Systems (Tanenbaum)
-### - Linux PrivEsc Course + Modern Operating Systems (Tanenbaum)
+## Phase 1 — Foundations
 
----
-# -- PNPT Certification --
----
+- **PEH Course** · *(reading: Computer Networks — Tanenbaum)*
 
-### - JavaScript crash course (<1 week)
-### - Black Hat Python (Seitz)
-### - Practical Bug Bounty Course 
-### - Practical Web Hacking Course 
-### - Practical API Hacking Course 
-### - Advanced Web Hacking Course 
+### 🎯 → PJPT
 
 ---
-## -- PWPE Certification --
----
 
-###  - Proving Grounds VM's + HTB/THM VM's
+## Phase 2 — Internal & Privilege Escalation
 
----
-# -- OSCP Certification --
----
+- **OSINT Course**
+- **External Pentest Course**
+- **Windows PrivEsc Course** · *(reading: Modern Operating Systems — Tanenbaum)*
+- **Linux PrivEsc Course** · *(continue: Modern Operating Systems — Tanenbaum)*
 
-### - The C Programming Language (K&R) 
-### - Hacking: The Art of Exploitation (Erickson)
-### - The Art of Assembly Language (Hyde)
+### 🎯 → PNPT
 
 ---
-# -- OSEP → OSWE → OSED Certifications (details later) --
+
+## Phase 3 — Bridge to Web
+
+- **JavaScript Crash Course** · *(< 1 week, basics only)*
+
 ---
+
+## ⚡ Standalone Block — Offensive Python
+
+- **Black Hat Python** (Seitz) · *active, hands-on*
+
+---
+
+## Phase 4 — Web & API
+
+- **Practical Bug Bounty Course**
+- **Practical Web Hacking Course**
+- **Practical API Hacking Course**
+- **Advanced Web Hacking Course**
+
+### 🎯 → PWPE
+
+---
+
+## Phase 5 — OSCP
+
+- **Proving Grounds VMs + HTB / THM VMs** · *practice*
+
+### 🎯 → OSCP
+
+---
+
+## ⚡ Standalone Block — Exploit-Dev Literacy
+
+*Cleared before the OSED tier — read in order, each builds on the last.*
+
+1. **The C Programming Language** (K&R) · *learn to read/write C*
+2. **Hacking: The Art of Exploitation** (Erickson) · *C + ASM + exploitation, integrated*
+3. **The Art of Assembly Language** (Hyde) · *deep ASM reference for OSED*
+
+---
+
+## Phase 6 — Advanced Offensive Security
+
+### 🎯 → OSEP · OSWE · OSED *(gonna add details later)*
