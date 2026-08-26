@@ -4,49 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e50a5904805de58f",
+        "id": "2d784c1389e102ac",
         "type": "tabs",
         "children": [
           {
-            "id": "bcda61daee609e62",
+            "id": "f8afaa70deb10c1a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practice (VM's)/Butler (Work In Progress)/Notes.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Notes"
-            }
-          },
-          {
-            "id": "34562c2a94990938",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practice (VM's)/Butler (Work In Progress)/Raw Scans.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Raw Scans"
-            }
-          },
-          {
-            "id": "47fbd7f5a88e4a3f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practice (VM's)/Butler (Work In Progress)/S&E Checklists.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "S&E Checklists"
+              "title": "New tab"
             }
           }
         ]
@@ -216,12 +184,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "44a8750d9b1cd0a2",
+  "active": "f8afaa70deb10c1a",
   "lastOpenFiles": [
+    "Practice (VM's)/Butler (Work In Progress)/S&E Checklists.md",
+    "Practice (VM's)/Butler (Work In Progress)/Notes.md",
+    "assets/Pasted image 20260826205350.png",
+    "assets/Pasted image 20260826205253.png",
+    "Practice (VM's)/Defaults/Notes (Template).md",
     "assets/Pasted image 20260826204446.png",
     "Theory/Reconnaissance/Scanning & Enumeration/Tools/smbclient.md",
-    "Practice (VM's)/Butler (Work In Progress)/Notes.md",
-    "Practice (VM's)/Butler (Work In Progress)/S&E Checklists.md",
     "Practice (VM's)/Butler (Work In Progress)/Raw Scans.md",
     "assets/Pasted image 20260826203720.png",
     "Theory/Reconnaissance/Scanning & Enumeration/Tools/FFUF.md",
@@ -234,11 +205,8 @@
     "assets/Screenshot 2026-08-20 013725.png",
     "Practice (VM's)/123",
     "assets/Pasted image 20260825230503.png",
-    "assets/Pasted image 20260825225525.png",
-    "assets/Pasted image 20260821184108.png",
     "Practice (VM's)/Butler (Work In Progress)/Exploitation Checklists.md",
     "Practice (VM's)/Butler (Work In Progress)/Post-Exploitation Checklists.md",
-    "assets/Screenshot 2026-08-17 221048.png",
     "Practice (VM's)/Butler/OSINT Checklists.md",
     "Practice (VM's)/Defaults/Exploitation Checklists (Template).md",
     "Practice (VM's)/Butler (Work In Progress)",
@@ -246,7 +214,6 @@
     "Practice (VM's)/Dev/Post-Exploitation Checklists.md",
     "Practice (VM's)/Dev/Raw Scans.md",
     "Total Progress.md",
-    "Practice (VM's)/Defaults/Notes (Template).md",
     "Practice (VM's)/Defaults/S&E Checklists (Template).md",
     "Theory/Reconnaissance/OSINT/OSINT Methodology.md",
     "Practice (VM's)/Academy/Notes.md",
