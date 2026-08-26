@@ -1,12 +1,12 @@
 # Certification Roadmap Tracker
 
-Global Progress: 1.15%
+Global Progress: 1.2%
 
 [░░░░░░░░░░░░░░░░░░░░] 
 
 ### 1. PJPT Certification Path
 
-Practical Ethical Hacking Course (PEH) [23%]
+Practical Ethical Hacking Course (PEH) [24%]
 
 [██░░░░░░░░]
 
@@ -60,7 +60,7 @@ PWPE Exam [0%]
 
 ### 4. OSCP Certification Path
 
-OSCP Prep Course (VMs & Modules) [0%]
+OSCP Prep (VMs & Modules) [0%]
 
 [░░░░░░░░░░]
 
