@@ -75,6 +75,32 @@
 - [ ] Can't read a file (owned by another UID)? NFSv3 trusts whatever UID your client claims, so **become that UID**: on YOUR box (you're root there) `sudo useradd -u <UID> faker`, then `sudo su faker`, then read the file — server sees the matching number and hands it over
 - [ ] Export shows `no_root_squash`? Root privesc — the shape: mount as root (your root = real root on the share), copy a shell binary onto it, `sudo chown root:root <bin>` + `sudo chmod u+s <bin>` (SUID bit = runs as its owner root), then execute it from a foothold shell ON the target → root. (Needs a compiled shell binary + an existing foothold; flesh out when you hit a real one)
 
+### 53 (DNS)
+
+> DNS is the phonebook: name ↔ IP. `-d` picks the target domain, `-t` picks the technique. A "nameserver" is the DNS server holding the records; `-n` aims your query at a *specific* one (the target's own, not your default) — required for zone transfers and internal/AD lookups. Reference, not a step.
+
+- [ ] Note the DNS version/software from the initial scan: `nmap -sV -sC -p 53 <IP>`
+
+**Perspective A — you have the IP but NO domain (reverse first):**
+
+- [ ] Reverse-lookup the box's own subnet to turn IPs into hostnames: `dnsrecon -r <IP>/24 -n <IP>` — aims PTR queries at the target's own DNS server. A hit hands you the internal hostname/domain (e.g. `something.tcm`)
+- [ ] No `-r` hit? Try a single reverse query straight at the IP to catch a PTR record
+- Found a hostname/domain? → do the `/etc/hosts` step below, then pivot to Perspective B to enumerate it further
+
+**Perspective B — you have the domain but NO/partial IP mapping (forward):**
+
+- [ ] Standard first-pass — pull the public records (A, MX, NS, TXT, SOA): `dnsrecon -d <domain> -t std`
+- [ ] Try the jackpot — zone transfer dumps the *entire* zone at once if the server is misconfigured: `dnsrecon -d <domain> -t axfr`
+- [ ] Zone transfer against a *specific* nameserver you found in the NS records: `dnsrecon -d <domain> -t axfr -n <nameserver>`
+- [ ] Zone transfer failed? Bruteforce subdomains from a wordlist: `dnsrecon -d <domain> -t brt -D /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt`
+- [ ] Suspect Active Directory? Enumerate SRV records to find domain services (LDAP, Kerberos, the DC): `dnsrecon -d <domain> -t srv`
+
+**Always — map the name so the browser/tools can reach it:**
+
+- [ ] Add every domain/subdomain found to `/etc/hosts` so you can browse by name and run normal HTTP/HTTPS enumeration against it: `echo "<IP>  <domain> <subdomain1> <subdomain2>" | sudo tee -a /etc/hosts`
+- [ ] Confirm it resolves: `ping -c1 <domain>` (or just load it in the browser)
+- Now treat it like any web target → jump to the **80 / 443 (HTTP / HTTPS)** checklist and enumerate (dirbust, subdomains, etc.)
+
 ---
 
 # When Stuck →

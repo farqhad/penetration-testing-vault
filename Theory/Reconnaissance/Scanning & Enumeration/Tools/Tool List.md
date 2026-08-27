@@ -2,11 +2,13 @@
 
 **[NMAP](NMAP.md)**
 
-**[MSFCONSOLE (METASPLOIT)](METASPLOIT)).md)**
+**[MSFCONSOLE (METASPLOIT)](MSFCONSOLE%20(METASPLOIT).md)**
 
 **Shodan (OSINT - passive)**
 
 **Censys (OSINT - passive)**
+
+**[dnsrecon](dnsrecon.md)**
 
 ### Local Network Scanning
 
