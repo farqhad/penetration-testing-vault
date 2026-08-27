@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Roadmap.md",
-                "mode": "source",
+                "file": "Practice (VM's)/Defaults/Exploitation Checklists (Template).md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Roadmap"
+              "title": "Exploitation Checklists (Template)"
             }
           }
         ]
@@ -190,8 +190,9 @@
   },
   "active": "f8afaa70deb10c1a",
   "lastOpenFiles": [
-    "Current Progress.md",
+    "Practice (VM's)/Defaults/S&E Checklists (Template).md",
     "The Roadmap.md",
+    "Current Progress.md",
     "Practice (VM's)/Blue/Notes.md",
     "Practice (VM's)/Butler (Work In Progress)/S&E Checklists.md",
     "Practice (VM's)/Butler (Work In Progress)/Notes.md",
@@ -220,7 +221,6 @@
     "Practice (VM's)/Defaults/Post-Exploitation Checklists (Template).md",
     "Practice (VM's)/Dev/Post-Exploitation Checklists.md",
     "Practice (VM's)/Dev/Raw Scans.md",
-    "Practice (VM's)/Defaults/S&E Checklists (Template).md",
     "Theory/Reconnaissance/OSINT/OSINT Methodology.md",
     "Practice (VM's)/Academy/Notes.md",
     "Practice (VM's)/Blue/Raw Scans.md",
