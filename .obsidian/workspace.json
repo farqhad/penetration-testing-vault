@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practice (VM's)/Defaults/S&E Checklists (Template).md",
+                "file": "Current Progress.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "S&E Checklists (Template)"
+              "title": "Current Progress"
             }
           }
         ]
@@ -188,29 +188,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f8afaa70deb10c1a",
+  "active": "44a8750d9b1cd0a2",
   "lastOpenFiles": [
-    "Practice (VM's)/Defaults/Exploitation Checklists (Template).md",
-    "Practice (VM's)/Defaults/Post-Exploitation Checklists (Template).md",
-    "Practice (VM's)/Defaults/S&E Checklists (Template).md",
-    "Practice (VM's)/Defaults/Notes (Template).md",
-    "Current Progress.md",
+    "Practice (VMs)/Defaults/S&E Checklists (Template).md",
+    "Theory/Reconnaissance/Scanning & Enumeration/Tools/dnsrecon.md",
+    "Theory/Reconnaissance/Scanning & Enumeration/Tools/enum4linux.md",
+    "Theory/Reconnaissance/Scanning & Enumeration/Tools/FFUF.md",
+    "Theory/Reconnaissance/Scanning & Enumeration/Tools/MSFCONSOLE (METASPLOIT).md",
+    "Theory/Reconnaissance/Scanning & Enumeration/Tools/Nikto.md",
+    "Theory/Reconnaissance/Scanning & Enumeration/Tools/NMAP.md",
+    "Theory/Reconnaissance/Scanning & Enumeration/Tools/smbclient.md",
     "The Roadmap.md",
-    "Practice (VM's)/Blue/Notes.md",
+    "Practice (VMs)/Defaults/Exploitation Checklists (Template).md",
+    "Practice (VMs)/Defaults/Post-Exploitation Checklists (Template).md",
+    "Practice (VMs)/Defaults/Notes (Template).md",
+    "Current Progress.md",
+    "Practice (VMs)/Blue/Notes.md",
     "Practice (VM's)/Butler (Work In Progress)/S&E Checklists.md",
     "Practice (VM's)/Butler (Work In Progress)/Notes.md",
     "assets/Pasted image 20260826205350.png",
     "assets/Pasted image 20260826205253.png",
     "assets/Pasted image 20260826204446.png",
-    "Theory/Reconnaissance/Scanning & Enumeration/Tools/smbclient.md",
     "Practice (VM's)/Butler (Work In Progress)/Raw Scans.md",
     "assets/Pasted image 20260826203720.png",
-    "Theory/Reconnaissance/Scanning & Enumeration/Tools/FFUF.md",
     "assets/Pasted image 20260825232118.png",
     "Practice (VM's)/Butler/assets/Pasted image 20260825231523.png",
     "assets/Pasted image 20260825231707.png",
     "Practice (VM's)/Butler/assets",
-    "Practice (VM's)/Dev/Notes.md",
+    "Practice (VMs)/Dev/Notes.md",
     "assets/Pasted image 20260813114144.png",
     "assets/Screenshot 2026-08-20 013725.png",
     "Practice (VM's)/123",
@@ -219,22 +224,17 @@
     "Practice (VM's)/Butler (Work In Progress)/Post-Exploitation Checklists.md",
     "Practice (VM's)/Butler/OSINT Checklists.md",
     "Practice (VM's)/Butler (Work In Progress)",
-    "Practice (VM's)/Dev/Post-Exploitation Checklists.md",
-    "Practice (VM's)/Dev/Raw Scans.md",
+    "Practice (VMs)/Dev/Post-Exploitation Checklists.md",
+    "Practice (VMs)/Dev/Raw Scans.md",
     "Theory/Reconnaissance/OSINT/OSINT Methodology.md",
-    "Practice (VM's)/Academy/Notes.md",
-    "Practice (VM's)/Blue/Raw Scans.md",
-    "Theory/Reconnaissance/Scanning & Enumeration/S&E Methodology.md",
-    "Practice (VM's)/Defaults",
-    "Theory/Exploitation/Exploitation Methodology.md",
-    "Theory/Post-Exploitation/Post-Exploitation Methodology.md",
-    "Theory/Reference/Legacy Machine Compatibility.md",
+    "Practice (VMs)/Academy/Notes.md",
+    "Practice (VMs)/Blue/Raw Scans.md",
+    "Practice (VMs)/Defaults",
     "Theory/Reference",
-    "Theory/Reconnaissance/Scanning & Enumeration/Advanced - Stealth & IDS Evasion.md",
     "assets",
-    "Practice (VM's)/Dev",
+    "Practice (VMs)/Dev",
     "Theory/Post-Exploitation/Tools",
-    "Practice (VM's)/Academy",
-    "Practice (VM's)/Blue"
+    "Practice (VMs)/Academy",
+    "Practice (VMs)/Blue"
   ]
 }

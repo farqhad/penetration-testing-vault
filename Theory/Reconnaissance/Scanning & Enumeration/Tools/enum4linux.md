@@ -52,8 +52,6 @@
 
 **enum4linux-ng 192.168.1.10**
 
-# Common Usage Combos
-
 ### The All-In-One (Anonymous/Null Session)
 
 **enum4linux -a 192.168.1.10**
