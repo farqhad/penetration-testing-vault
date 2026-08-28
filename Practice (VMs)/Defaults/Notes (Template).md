@@ -20,7 +20,7 @@
 
 # SERVICE (1337/TCP)
 
-### via TOOL
+## via TOOL
 
 ```
 ┌──(root㉿kali)-[/home/kali]
@@ -35,7 +35,7 @@ paste text or screenshot
 
 # -- Version Research (Potential Vulnerabilities) --
 
-### via TOOL
+## via TOOL
 
 ```
 ┌──(root㉿kali)-[/home/kali]
@@ -50,14 +50,14 @@ paste text or screenshot
 
 # -- Exploitation --
 
-### via TOOL
+## via TOOL
 
 ```
 ┌──(root㉿kali)-[/home/kali]
 └─# command if needed
 ```
 
-#### Info: ...
+### Info: ...
 
 ```
 paste text or screenshot
