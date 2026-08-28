@@ -26,7 +26,7 @@
 
 - [ ] Kernel + OS version → search for a matching kernel exploit
 - [ ] Scheduled tasks: `crontab -l` / `systemctl list-timers` / `ps`; or run `pspy` and leave it a while
-- [ ] Enumerate credentials with `locate pass/pwd/passwd/password | more` or `grep -rnw '/' -ie "PASSWORD/PWD/PASSWD/PASS/..." --color=always 2> /dev/null`
+- [ ] Enumerate credentials with `locate pass/pwd/passwd/password | more` or `grep -rnw '/' -ie "PASSWORD/PWD/PASSWD/PASS/..." --color=always 2> /dev/null | more`
 - [ ] Looks for private keys: `locate id_rsa | more`
 - [ ] check GTFOBINS
 - [ ] Automated sweep: `LinPEAS` / `LinEnum` / `linux-exploit-suggester` / `linuxprivchecker`
