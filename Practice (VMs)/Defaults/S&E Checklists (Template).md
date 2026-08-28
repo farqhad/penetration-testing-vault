@@ -100,6 +100,7 @@
 - [ ] Add every domain/subdomain found to `/etc/hosts` so you can browse by name and run normal HTTP/HTTPS enumeration against it: `echo "<IP>  <domain> <subdomain1> <subdomain2>" | sudo tee -a /etc/hosts`
 - [ ] Confirm it resolves: `ping -c1 <domain>` (or just load it in the browser)
 - Now treat it like any web target → jump to the **80 / 443 (HTTP / HTTPS)** checklist and enumerate (dirbust, subdomains, etc.)
+- In METASPLOIT you set vhosts to the exact domain name if you're attacking the dns server.
 
 ---
 
