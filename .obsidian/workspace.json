@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practice (VMs)/Iginte (TryHackMe)/Notes.md",
+                "file": "Practice (VMs)/Defaults/Linux Privilege Escalation Checklists (Template).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notes"
+              "title": "Linux Privilege Escalation Checklists (Template)"
             }
           }
         ]
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e95190c0f6180dbc",
@@ -190,9 +191,9 @@
   },
   "active": "f8afaa70deb10c1a",
   "lastOpenFiles": [
-    "Practice (VMs)/Defaults/Post-Exploitation Checklists (Template).md",
-    "Practice (VMs)/Iginte (TryHackMe)/Post-Exploitation Checklists.md",
     "Practice (VMs)/Iginte (TryHackMe)/Notes.md",
+    "Practice (VMs)/Defaults/Linux Privilege Escalation Checklists (Template).md",
+    "Practice (VMs)/Iginte (TryHackMe)/Post-Exploitation Checklists.md",
     "Practice (VMs)/Iginte (TryHackMe)/linpeas.md",
     "assets/Pasted image 20260828191456.png",
     "assets/Pasted image 20260828190043.png",

@@ -38,7 +38,7 @@ PORT   STATE SERVICE VERSION
 
 ![](../../assets/Pasted%20image%2020260828171553.png)
 
-### admin login endpoint on default page - no dirbust needed (potentially working default credentials)
+### admin login endpoint apparent without dirbust (potentially working default credentials)
 
 ![](../../assets/Pasted%20image%2020260828171929.png)
 
