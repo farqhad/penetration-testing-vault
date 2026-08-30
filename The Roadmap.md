@@ -7,7 +7,7 @@
 
 ## Phase 1 — Foundations
 
-- **PEH Course** · *(reading: Computer Networks — Tanenbaum)*
+- **PEH Course** · *(reading: Computer Networks — Tanenbaum) ('til page 535)*
 
 ### 🎯 → PJPT Certification
 
@@ -15,8 +15,8 @@
 
 ## Phase 2 — Internal & Privilege Escalation
 
-- **OSINT Course**
-- **External Pentest Course**
+- **OSINT Course** · *(continue: Computer Networks — Tanenbaum) ('til page 776)*
+- **External Pentest Course** · *(continue: Computer Networks — Tanenbaum) (finish - 869)*
 - **Windows PrivEsc Course** · *(reading: Modern Operating Systems — Tanenbaum)*
 - **Linux PrivEsc Course** · *(continue: Modern Operating Systems — Tanenbaum)*
 
