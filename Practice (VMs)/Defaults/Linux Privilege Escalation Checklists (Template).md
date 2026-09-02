@@ -18,7 +18,8 @@
 - [ ] `lscpu` for basic cpu info
 - [ ] `ps aux` for running tasks
 - [ ] `/home/*` - check readable home dirs, `.bash_history`, SSH keys, stray notes
-- [ ] `/etc/passwd; /etc/shadow` - which users exist, their password hashes
+- [ ] `/etc/passwd; /etc/shadow` - which users exist, their password hashes, writeable?
+- Try **unshadow** if using **JohnTheRipper**
 - [ ] `sudo -l` to see what I can execute as root (sudo) without a password
 - [ ] App / web config files for hardcoded creds (`config.php`, `.env`, `wp-config.php`, etc.) - DB passwords are routinely reused for SSH and other services. A config file beats an exploit when it's there
 - [ ] Every credential you find → try it on every service and every user (password reuse)
