@@ -8,11 +8,12 @@
 - [ ] `route` / `ip route` - what we're routing through
 - [ ] `arp -a` / `ip neigh` - stale and reachable addresses in the network
 - [ ] `netstat -ano` - open ports and existing connections
-- [ ] Upgrade a raw shell to a proper TTY before doing real work
 - [ ] Grab proof of access now (`id` + `ip a` / `ipconfig`) — the thing that's easy to forget at the end
+- [ ] Upgrade a raw shell to a proper TTY before doing real work
 
 ### Loot the current context
 
+- Look for weak file permissions along the way!
 - [ ] `uname -a`, `cat /proc/version`, `cat /etc/issue` for basic system info 
 - [ ] `lscpu` for basic cpu info
 - [ ] `ps aux` for running tasks
