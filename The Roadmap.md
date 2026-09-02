@@ -66,10 +66,13 @@
 2. **Hacking: The Art of Exploitation** (Erickson) 
 3. **The Art of Assembly Language** (Hyde) 
 4. **Practical Reverse Engineering** (Dang et al.)
-5. **Attacking Network Protocols** (Forshaw)
+5. **From Day Zero to Zero Day** (Lim)
+6. **Attacking Network Protocols** (Forshaw)
 
 ---
 
 ## Phase 6 — Advanced Offensive Security
 
 ### 🎯 → OSEP · OSWE · OSED Certifications *(gonna add details later)*
+
+- **The Black Mass** (vxunderground)
