@@ -27,6 +27,7 @@
 - [ ] Anonymous allowed? Confirm manually: `ftp <IP>` → user `anonymous`, password anything
 - [ ] Download everything readable: `wget ftp://anonymous:anonymous@<IP>/<file>` (or `get` / `mget *` inside the session)
 - [ ] Read every single file — readable files often hand over creds, internal notes, or hints toward other services
+- [ ] See if you can `put` a file
 
 ### 22 (SSH)
 

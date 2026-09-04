@@ -11,7 +11,7 @@
 
 ### Loot the current context
 
-- [ ] 
+- [ ] Run `systeminfo` or `systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"` for basic system information
 - [ ] 
 - [ ] 
 - [ ] 
