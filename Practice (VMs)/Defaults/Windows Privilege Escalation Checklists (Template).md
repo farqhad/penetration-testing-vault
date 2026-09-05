@@ -2,11 +2,7 @@
 
 ### Situational awareness (first thing on every shell)
 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] Grab proof of access now - `whoami`
+- [ ] Grab proof of access now - `whoami`; `ipconfig`
 - [ ] Upgrade the shell to a proper one before doing real work (if using meterpreter, use `shell`)
 
 ### Loot the current context
