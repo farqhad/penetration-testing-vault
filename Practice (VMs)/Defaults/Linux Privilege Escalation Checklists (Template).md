@@ -9,7 +9,7 @@
 - [ ] `arp -a` / `ip neigh` - stale and reachable addresses in the network
 - [ ] `netstat -ano` - open ports and existing connections
 - [ ] Grab proof of access now (`id` + `ip a` / `ipconfig`) — the thing that's easy to forget at the end
-- [ ] Upgrade a raw shell to a proper TTY before doing real work
+- [ ] Upgrade a raw shell to a proper TTY before doing real work (if using meterpreter, use `shell`)
 
 ### Loot the current context
 

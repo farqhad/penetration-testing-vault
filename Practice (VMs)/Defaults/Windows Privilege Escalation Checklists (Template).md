@@ -1,4 +1,4 @@
-> Run these the moment you land a shell.
+> Run these the moment you land a shell. '()' in commands usually means optional appendix.
 
 ### Situational awareness (first thing on every shell)
 
@@ -6,15 +6,16 @@
 - [ ] 
 - [ ] 
 - [ ] 
-- [ ] Grab proof of access now — the thing that's easy to forget at the end
-- [ ] Upgrade the shell to a proper one before doing real work
+- [ ] Grab proof of access now - `whoami`
+- [ ] Upgrade the shell to a proper one before doing real work (if using meterpreter, use `shell`)
 
 ### Loot the current context
 
-- [ ] Run `systeminfo` or `systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"` for basic system information
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Run `systeminfo `(`| findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"`) for basic system information
+- [ ] `wmic qfe` for quick-fix information
+- [ ] `list drives` or `wmic logicaldisk `(`get caption,description,priovidername`) for logical disk information
+- [ ] `whoami /priv` and `whoami /groups` for privileges and groups
+- [ ] `net user` for users information
 - [ ] Every credential you find → try it on every service and every user (password reuse)
 
 ### Privilege escalation — vector hunting
