@@ -15,7 +15,8 @@
 - [ ] `wmic qfe` for quick-fix information
 - [ ] `list drives` or `wmic logicaldisk `(`get caption,description,priovidername`) for logical disk information
 - [ ] `whoami /priv` and `whoami /groups` for privileges and groups
-- [ ] `net user` for users information
+- [ ] `net user `(`<username>`) for users' information or a particular user's information
+- [ ] `net localgroup `(`<groupname>`) for groups' information or a particular group's information
 - [ ] Every credential you find → try it on every service and every user (password reuse)
 
 ### Privilege escalation — vector hunting
