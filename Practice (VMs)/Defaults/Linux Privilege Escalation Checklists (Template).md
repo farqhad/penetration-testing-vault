@@ -30,8 +30,8 @@
 - [ ] Scheduled tasks: `crontab -l` / `systemctl list-timers` / `ps`; or run `pspy` and leave it a while
 - [ ] Enumerate credentials with `locate pass/pwd/passwd/password | more` or `grep -rnw '/' -ie "PASSWORD/PWD/PASSWD/PASS/..." --color=always 2> /dev/null | less`
 - [ ] Looks for SSH keys: `locate id_rsa | less`; `find / -name authorized_keys 2> /dev/null`; `find / -name id_rsa 2> /dev/null`
-- [ ] look through PayloadsAllTheThings
-- [ ] look through GTFOBINS
+- [ ] look through `PayloadsAllTheThings`
+- [ ] look through `GTFOBINS`
 - [ ] Automated sweep: `LinPEAS` / `linux-exploit-suggester` / `LinEnum` / `linuxprivchecker`
 
 ### Applying a vector
