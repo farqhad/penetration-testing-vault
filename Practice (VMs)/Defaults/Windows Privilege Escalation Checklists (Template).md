@@ -10,13 +10,13 @@
 ### Loot the current context
 
 - [ ] Run `systeminfo `(`| findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"`) for basic system information
-- [ ] `wmic qfe` for quick-fix information
+- [ ] `wmic qfe` for patches' and hotfixes' information
 - [ ] `list drives` or `wmic logicaldisk `(`get caption,description,priovidername`) for logical disk information
 - [ ] `whoami /priv` and `whoami /groups` for privileges and groups
 - [ ] `net user `(`<username>`) for users' information or a particular user's information
 - [ ] `net localgroup `(`<groupname>`) for groups' information or a particular group's information
 - [ ] `sc query windefend` for windows defender information
-- [ ] `sc queryex type= service` for all services' information
+- [ ] `sc queryex type= service` for all services' extended information
 - [ ] `netsh advfirewall firewall dump` or `netsh firewall show state` for firewall information
 - [ ] `netsh firewall show config` for firewall configuration
 - [ ] Every credential you find → try it on every service and every user (password reuse)
