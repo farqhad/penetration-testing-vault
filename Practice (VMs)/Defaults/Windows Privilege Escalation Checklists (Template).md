@@ -1,3 +1,4 @@
+
 > Run these the moment you land a shell. '()' in commands usually means optional appendix.
 
 ### Situational awareness (first thing on every shell)

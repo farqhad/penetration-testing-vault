@@ -1,6 +1,6 @@
 ### Target Name: Ignite
 
-### Target IP: 10.114.158.114
+### Target IP: ``inconsistent (different TryHackMe sessions)``
 
 ### Attacker IP: 192.168.162.245
 
@@ -101,12 +101,10 @@ Copied to: /root/50477.py
 
 ![](../../assets/Pasted%20image%2020260828191456.png)
 
-#### ...
-
-
+#### got nothing useful from PEAS
 
 ### Applying found vectors
 
-#### ...
+#### ended up just finding credentials in a configuration file (forgot to document that in the notes)
 
 ---
