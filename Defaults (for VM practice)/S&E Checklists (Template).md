@@ -32,6 +32,7 @@
 ### 22 (SSH)
 
 - [ ] `nmap -sV -sC` — grab the OpenSSH version + protocol
+- [ ] spray&pray
 - Note the protocol version: `1.x` / `1.99` means legacy SSHv1 support → old box, expect kex/cipher issues
 - Can't connect (kex / cipher errors)? → see [Legacy Machine Compatibility](../../Theory/Reference/Legacy%20Machine%20Compatibility.md)
 
