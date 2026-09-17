@@ -21,6 +21,7 @@
 - [ ] `/etc/passwd; /etc/shadow` - which users exist, their password hashes, writeable?
 - Try **unshadow** if using **JohnTheRipper**
 - [ ] `sudo -l` to see what I can execute as root (sudo) without a password
+- [ ] `find / -perm /4000 2> /dev/null`  to find SUID files
 - [ ] App / web config files for hardcoded creds (`config.php`, `.env`, `wp-config.php`, etc.) - DB passwords are routinely reused for SSH and other services. A config file beats an exploit when it's there
 - [ ] Every credential you find → try it on every service and every user (password reuse)
 
