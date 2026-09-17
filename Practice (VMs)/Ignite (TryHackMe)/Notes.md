@@ -1,8 +1,8 @@
 ### Target Name: Ignite
 
-### Target IP: ``inconsistent (different TryHackMe sessions)``
+### Target IP: `inconsistent (different TryHackMe sessions)`
 
-### Attacker IP: 192.168.162.245
+### Attacker IP: `inconsistent (different TryHackMe sessions)`
 
 # -- Scanning & Enumeration --
 
