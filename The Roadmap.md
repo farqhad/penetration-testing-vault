@@ -16,6 +16,15 @@
 
 ---
 
+## ⚡ Standalone Block — Bash Fluency
+
+- **Short concept overview** (~1-2h): variables, loops, conditionals, pipes, redirection, command substitution
+- **OverTheWire: Bandit** - solve levels (offensive-flavored, ideal fit)
+
+*~a weekend.*
+
+---
+
 ## Phase 2 — Internal & Privilege Escalation
 
 - **OSINT Course**
