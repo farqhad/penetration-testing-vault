@@ -12,7 +12,7 @@
 
 - **PEH Course** · *(reading: TCP/IP Illustrated, Vol. 1 — Stevens/Fall, 2nd ed.)*
 
-### 🎯 → PJPT Certification
+### 🎯 → PJPT Certification~~
 
 ---
 
