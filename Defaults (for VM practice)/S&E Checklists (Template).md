@@ -2,13 +2,13 @@
 
 ## Lessons from failures
 
-> Not steps to tick — hard-won rules to keep in mind while you work.
+> Hard-won rules.
 
-**1) WORDLISTS ARE IMPORTANT. DEEPER ENUMERATION IS IMPORTANT. time wasted: 2 days**
+**1) Bigger wordlist, deeper enumeration. (time wasted: 2 days)**
 
-**2) SNOW BLINDNESS. In a long list where most entries are noise, read every line — the one that matters hides among the ones that don't. Applies to nmap output, fuzzing results, directory/file listings, enum dumps.**
+**2) SNOW BLINDNESS. Small enough to read → READ it, line by line. Too big → PROCESS it (grep/sort/uniq/wc). NEVER SKIM. (time wasted: a night without sleep)** 
 
-**3) ALWAYS LOOK FOR CONFIG FILES. During enumeration: exposed over HTTP (backups like `.bak` / `.old` / `.php~`, open directory listings). Post-shell: on-disk for hardcoded creds that get reused elsewhere.**
+**3) DEDUPE + PROFILE wordlists before brute-force. `sort x.dic|uniq`. Filter by length or password strength if the user isn't likely to have a trivial password. (time wasted: 1 day)** 
 
 ---
 
