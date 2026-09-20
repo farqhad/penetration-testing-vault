@@ -50,6 +50,7 @@
 - Results thin / box feels empty? Re-run with a **bigger** wordlist before assuming there's nothing there
 - [ ] Found a web app? Pin its exact version (login page, `/README`, `/ChangeLog`) 
 - [ ] Watch for open directory listings — they can expose source, SQL dumps, backups, config files
+- [ ] Wordpress? Run `wpscan` to enumerate whatever's enumerable. (e.g. usernames)
 - [ ] Second web port (8080 etc.)? Treat it as its own separate app — enumerate it independently
 - [ ] Scan flags `http-open-proxy` on a web port? Test if it really forwards: `curl -x http://<IP>:<port> http://example.com`. External page comes back = real open proxy (can tunnel requests, even to the box's own `127.0.0.1` services); nothing back = false positive, drop it
 - [ ] Run Nikto
