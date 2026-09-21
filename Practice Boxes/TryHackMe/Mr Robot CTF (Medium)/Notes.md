@@ -78,7 +78,7 @@ fsocity.dic                            100%[====================================
 #### sort & sanitize the wordlist right away
 
 ```
-[farqhadd@red-wheelbarrow mrrobot_ctf]$ sort fsocity.dic | uniq < fsocity_sorted.dic
+[farqhadd@red-wheelbarrow mrrobot_ctf]$ sort fsocity.dic | uniq > fsocity_sorted.dic
 
 [farqhadd@red-wheelbarrow mrrobot_ctf]$ wc -l fsocity_sorted.dic
 11451 fsocity_sorted.dic
