@@ -25,7 +25,7 @@
 
 ---
 
-## Phase 2 — Internal & Privilege Escalation
+## Phase 2 — External & Privilege Escalation
 
 - **OSINT Course**
 - **External Pentest Course**
