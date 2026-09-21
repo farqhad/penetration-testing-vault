@@ -95,11 +95,11 @@ fsocity.dic                            100%[====================================
 
 ## via BurpSuite
 
-#### inspect the request via BurpSuite and remember the `user_login=` format
+#### inspect the request and remember the `user_login=` format
 
 ![](../../../assets/Pasted%20image%2020260921043540.png)
 
-#### inspect the normal login request via BurpSuite; format: `log=&pwd=`
+#### inspect the normal login request; format: `log=&pwd=`
 
 ![](../../../assets/Pasted%20image%2020260921045617.png)
 
