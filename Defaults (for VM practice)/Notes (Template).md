@@ -4,6 +4,10 @@
 
 ### Attacker IP: 
 
+### Difficulty:
+
+### Date:
+
 # -- Scanning & Enumeration --
 
 # Open Ports

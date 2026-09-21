@@ -4,9 +4,7 @@
 
 ### Attacker IP: 192.168.57.4
 
-### Started: ~2:30 AM
-
-### Rooted: ~4:20 AM
+### Difficulty: Easy
 
 # Operating System
 

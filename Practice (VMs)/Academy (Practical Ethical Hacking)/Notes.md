@@ -4,6 +4,8 @@
 
 ### Attacker IP: 192.168.57.4
 
+### Difficulty: Easy
+
 # -- Scanning & Enumeration --
 
 # Open Ports

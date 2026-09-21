@@ -4,6 +4,8 @@
 
 ### Attacker IP: `inconsistent (different TryHackMe sessions)`
 
+### Difficulty: Easy
+
 # -- Scanning & Enumeration --
 
 # Open Ports
