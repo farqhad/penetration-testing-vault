@@ -143,7 +143,7 @@ We can always adapt it to our needs.
 
 #### Client&Version: vsftpd 3.0.3
 
-![Pasted image 20260816145048](../../assets/Pasted%20image%2020260816145048.png)
+![Pasted image 20260816145048](../../../assets/Pasted%20image%2020260816145048.png)
 
 # HTTP (80/TCP)
 
@@ -172,55 +172,55 @@ PORT   STATE SERVICE VERSION
 
 #### Technology: Apache (Default Page)
 
-![Pasted image 20260816151331](../../assets/Pasted%20image%2020260816151331.png)
+![Pasted image 20260816151331](../../../assets/Pasted%20image%2020260816151331.png)
 
 #### Version: Apache/2.4.38 (404 Page)
 
-![Pasted image 20260816151539](../../assets/Pasted%20image%2020260816151539.png)
+![Pasted image 20260816151539](../../../assets/Pasted%20image%2020260816151539.png)
 
 #### Version: Apache/2.4.38 (403 Page)
 
-![Pasted image 20260816172115](../../assets/Pasted%20image%2020260816172115.png)
+![Pasted image 20260816172115](../../../assets/Pasted%20image%2020260816172115.png)
 
 #### Technology: MySQL (PhpMyAdmin Login Page)
 
-![Pasted image 20260816173145](../../assets/Pasted%20image%2020260816173145.png)
+![Pasted image 20260816173145](../../../assets/Pasted%20image%2020260816173145.png)
 
 #### Back-End Function Used: mysqli_real_connect(); (PhpMyAdmin Login Page)
 
-![Pasted image 20260816173723](../../assets/Pasted%20image%2020260816173723.png)
+![Pasted image 20260816173723](../../../assets/Pasted%20image%2020260816173723.png)
 
 #### Explicitly stated authentication token in the PhpMyAdmin Login Page source code
 
-![Pasted image 20260817160549](../../assets/Pasted%20image%2020260817160549.png)
+![Pasted image 20260817160549](../../../assets/Pasted%20image%2020260817160549.png)
 
 #### Version: PhpMyAdmin 4.9.7 (PhpMyAdmin README Page)
 
-![Pasted image 20260816181837](../../assets/Pasted%20image%2020260816181837.png)
+![Pasted image 20260816181837](../../../assets/Pasted%20image%2020260816181837.png)
 
 #### Fixed Vulnerabilities & Version: broken 2FA; PMASA-2020-1,2,3,4,5,6 & PhpMyAdmin 4.9.7 (PhpMyAdmin ChangeLog)
 
-![Pasted image 20260816182143](../../assets/Pasted%20image%2020260816182143.png)
+![Pasted image 20260816182143](../../../assets/Pasted%20image%2020260816182143.png)
 
 ##### Note: PhpMyAdmin 4.9.7 is compatible with MySQL 5.5 or newer
 
-![Pasted image 20260817155619](../../assets/Pasted%20image%2020260817155619.png)
+![Pasted image 20260817155619](../../../assets/Pasted%20image%2020260817155619.png)
 
 #### Public Access to DbSeed under /academy/db
 
-![Screenshot 2026-08-17 221048](../../assets/Screenshot%202026-08-17%20221048.png)
+![Screenshot 2026-08-17 221048](../../../assets/Screenshot%202026-08-17%20221048.png)
 
 ### via BurpSuite
 
 #### Version: Apache/2.4.38 (Debian) & HTTP/1.1
 
-![Pasted image 20260816152555](../../assets/Pasted%20image%2020260816152555.png)
+![Pasted image 20260816152555](../../../assets/Pasted%20image%2020260816152555.png)
 
 ### via Wappalyzer
 
 #### Services&Versions
 
-![Pasted image 20260817145807](../../assets/Pasted%20image%2020260817145807.png)
+![Pasted image 20260817145807](../../../assets/Pasted%20image%2020260817145807.png)
 
 # SSH (22/TCP)
 
@@ -299,25 +299,25 @@ vsftpd 3.0.3 - Remote Denial of Service
 
 #### PhpMyAdmin 4.9.7: bypassing 2FA
 
-![Pasted image 20260817021415](../../assets/Pasted%20image%2020260817021415.png)
+![Pasted image 20260817021415](../../../assets/Pasted%20image%2020260817021415.png)
 
 ##### Note: it was previously mentioned in the ChangeLog file that the 4.9.7 version included "fix broken Two-Factor Authentication", so this might've been patched
 
 #### Apache 2.4.38: Heap-based buffer overflow (CVE-2026-34356)
 
-![Pasted image 20260817022149](../../assets/Pasted%20image%2020260817022149.png)
+![Pasted image 20260817022149](../../../assets/Pasted%20image%2020260817022149.png)
 
 #### Apache 2.4.38: Stack-based buffer overflow (CVE-2026-34355)
 
-![Screenshot 2026-08-17 022405](../../assets/Screenshot%202026-08-17%20022405.png)
+![Screenshot 2026-08-17 022405](../../../assets/Screenshot%202026-08-17%20022405.png)
 
-#### vsftpd 3.0.3: remote DoS (CVE-2021-30047)![Screenshot 2026-08-17 022534](../../assets/Screenshot%202026-08-17%20022534.png)
+#### vsftpd 3.0.3: remote DoS (CVE-2021-30047)![Screenshot 2026-08-17 022534](../../../assets/Screenshot%202026-08-17%20022534.png)
 
 #### jQuery 3.4.1: XSS Vulnerability
 
-![Pasted image 20260817152647](../../assets/Pasted%20image%2020260817152647.png)
+![Pasted image 20260817152647](../../../assets/Pasted%20image%2020260817152647.png)
 
-![Pasted image 20260817152751](../../assets/Pasted%20image%2020260817152751.png)
+![Pasted image 20260817152751](../../../assets/Pasted%20image%2020260817152751.png)
 
 # -- Desperation --
 
@@ -344,23 +344,23 @@ phpmyadmin              [Status: 301, Size: 317, Words: 20, Lines: 10]
 
 #### SQL Injection possible on the /academy page
 
-![Pasted image 20260817214849](../../assets/Pasted%20image%2020260817214849.png)
+![Pasted image 20260817214849](../../../assets/Pasted%20image%2020260817214849.png)
 
-![Screenshot 2026-08-17 214911](../../assets/Screenshot%202026-08-17%20214911.png)
+![Screenshot 2026-08-17 214911](../../../assets/Screenshot%202026-08-17%20214911.png)
 
 ##### Note: Usage of previously discovered credentials (note.txt) gives the same result (password decoded from an MD5 hash, exists in open databases)
 
 #### SQL Injection also possible on the /academy/admin page
 
-![Screenshot 2026-08-17 220724](../../assets/Screenshot%202026-08-17%20220724.png)
+![Screenshot 2026-08-17 220724](../../../assets/Screenshot%202026-08-17%20220724.png)
 
 #### Unrestricted Photo Upload under /academy/my-profile.php
 
-![Pasted image 20260817222358](../../assets/Pasted%20image%2020260817222358.png)
+![Pasted image 20260817222358](../../../assets/Pasted%20image%2020260817222358.png)
 
 #### -which allowed for a php reverse shell script remote execution
 
-![Pasted image 20260817222523](../../assets/Pasted%20image%2020260817222523.png)
+![Pasted image 20260817222523](../../../assets/Pasted%20image%2020260817222523.png)
 
 # -- Post-Exploitation --
 
@@ -370,7 +370,7 @@ phpmyadmin              [Status: 301, Size: 317, Words: 20, Lines: 10]
 
 #### Home directory contains user "grimmie"
 
-![Pasted image 20260818012346](../../assets/Pasted%20image%2020260818012346.png)
+![Pasted image 20260818012346](../../../assets/Pasted%20image%2020260818012346.png)
 
 ##### Note: same guy that "uses the same password everywhere"
 
@@ -380,17 +380,17 @@ phpmyadmin              [Status: 301, Size: 317, Words: 20, Lines: 10]
 
 #### Lesson(2): If MOST of the listed things don't matter, doesn't mean that ALL of them don't matter. Look closely at each one. Also ALWAYS look for config files.
 
-![Pasted image 20260818125141](../../assets/Pasted%20image%2020260818125141.png)
+![Pasted image 20260818125141](../../../assets/Pasted%20image%2020260818125141.png)
 
 # --
 
 ### Grimmie's password in the `config.php` file
 
-![Pasted image 20260818130219](../../assets/Pasted%20image%2020260818130219.png)
+![Pasted image 20260818130219](../../../assets/Pasted%20image%2020260818130219.png)
 
 ### Which allowed for an ssh connection as grimmie
 
-![Pasted image 20260818130407](../../assets/Pasted%20image%2020260818130407.png)
+![Pasted image 20260818130407](../../../assets/Pasted%20image%2020260818130407.png)
 
 # The End.
 

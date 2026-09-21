@@ -44,19 +44,19 @@ Nmap done: 1 IP address (1 host up) scanned in 11.82 seconds
 
 #### Default Page
 
-![](../../assets/Pasted%20image%2020260918003035.png)
+![](../../../assets/Pasted%20image%2020260918003035.png)
 
 #### Username hidden in source code: `R1ckRul3s`
 
-![](../../assets/Pasted%20image%2020260918003156.png)
+![](../../../assets/Pasted%20image%2020260918003156.png)
 
 #### Login Page under `var/www/html/login.php`
 
-![](../../assets/Pasted%20image%2020260918003808.png)
+![](../../../assets/Pasted%20image%2020260918003808.png)
 
 #### Weird text under `var/www/html/robots.txt`
 
-![](../../assets/Pasted%20image%2020260918003902.png)
+![](../../../assets/Pasted%20image%2020260918003902.png)
 
 ---
 
@@ -66,41 +66,41 @@ Nmap done: 1 IP address (1 host up) scanned in 11.82 seconds
 
 #### Using the found username and the weird text as a password
 
-![](../../assets/Pasted%20image%2020260918004116.png)
+![](../../../assets/Pasted%20image%2020260918004116.png)
 ##### (successful)
 
 #### Access to a command line through `var/www/html/portal.php`
 
-![](../../assets/Pasted%20image%2020260918004331.png)
+![](../../../assets/Pasted%20image%2020260918004331.png)
 
 #### `cat` disabled
 
-![](../../assets/Pasted%20image%2020260918004619.png)
+![](../../../assets/Pasted%20image%2020260918004619.png)
 
 #### Found a way to read a file through bash code without `cat` after a bit of googling
 
-![](../../assets/Pasted%20image%2020260918004828.png)
+![](../../../assets/Pasted%20image%2020260918004828.png)
 
 #### Obtained the first flag: `mr. meeseek hair`
 
-![](../../assets/Pasted%20image%2020260918004942.png)
+![](../../../assets/Pasted%20image%2020260918004942.png)
 
 #### `/var/www/html/clue.txt` says to explore the file system
 
-![](../../assets/Pasted%20image%2020260918005104.png)
+![](../../../assets/Pasted%20image%2020260918005104.png)
 
 #### Found out the server has python3 installed
 
-![](../../assets/Pasted%20image%2020260918005514.png)
+![](../../../assets/Pasted%20image%2020260918005514.png)
 
 #### Obtained shell using a python reverse shell one-liner
 
-![](../../assets/Pasted%20image%2020260918005745.png)
+![](../../../assets/Pasted%20image%2020260918005745.png)
 ##### instantly upgraded to an interactive TTY shell
 
 #### obtained the second flag: `1 jerry tear`
 
-![](../../assets/Pasted%20image%2020260918010112.png)
+![](../../../assets/Pasted%20image%2020260918010112.png)
 
 ---
 
@@ -112,17 +112,17 @@ Nmap done: 1 IP address (1 host up) scanned in 11.82 seconds
 
 #### ran `sudo -l`; all commands are executable with `sudo` (no password)
 
-![](../../assets/Pasted%20image%2020260918010205.png)
+![](../../../assets/Pasted%20image%2020260918010205.png)
 
 ### Applying found vectors
 
 #### ran `sudo su`; got `root`
 
-![](../../assets/Pasted%20image%2020260918010255.png)
+![](../../../assets/Pasted%20image%2020260918010255.png)
 
 #### Obtained the third (last) flag: `fleeb juice`
 
-![](../../assets/Pasted%20image%2020260918010358.png)
+![](../../../assets/Pasted%20image%2020260918010358.png)
 
 ---
 ##### Probably the most satisfying machine I've done so far

@@ -80,70 +80,70 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ##### Default Page; Information Disclosure
 
-![Screenshot 2026-08-19 234955](../../assets/Screenshot%202026-08-19%20234955.png)
+![Screenshot 2026-08-19 234955](../../../assets/Screenshot%202026-08-19%20234955.png)
 
 ##### Information Disclosure
 
-![Pasted image 20260820002140](../../assets/Pasted%20image%2020260820002140.png)
+![Pasted image 20260820002140](../../../assets/Pasted%20image%2020260820002140.png)
 
 ##### Information Disclosure
 
-![Pasted image 20260820002202](../../assets/Pasted%20image%2020260820002202.png)
+![Pasted image 20260820002202](../../../assets/Pasted%20image%2020260820002202.png)
 
 ##### Openly available internal server files
 
-![Pasted image 20260820002552](../../assets/Pasted%20image%2020260820002552.png)
+![Pasted image 20260820002552](../../../assets/Pasted%20image%2020260820002552.png)
 
 ##### Internal server error when trying to open CustomisationExtension.php
 
-![Screenshot 2026-08-20 002606](../../assets/Screenshot%202026-08-20%20002606.png)
+![Screenshot 2026-08-20 002606](../../../assets/Screenshot%202026-08-20%20002606.png)
 
 ##### Openly available /app 
 
-![Pasted image 20260820004256](../../assets/Pasted%20image%2020260820004256.png)
+![Pasted image 20260820004256](../../../assets/Pasted%20image%2020260820004256.png)
 
 ##### Credentials disclosed in /app/config/config.yml | DB on sqlite
 
-![Pasted image 20260820003503](../../assets/Pasted%20image%2020260820003503.png)
+![Pasted image 20260820003503](../../../assets/Pasted%20image%2020260820003503.png)
 
 ##### Permission hierarchy information in /app/config/permissions.yml
 
-![Pasted image 20260820004016](../../assets/Pasted%20image%2020260820004016.png)
+![Pasted image 20260820004016](../../../assets/Pasted%20image%2020260820004016.png)
 
 ##### Credentials and full configuration in /app/cache/config-cache.json
 
-![Screenshot 2026-08-20 004400](../../assets/Screenshot%202026-08-20%20004400.png)
+![Screenshot 2026-08-20 004400](../../../assets/Screenshot%202026-08-20%20004400.png)
 
 ## :8080
 
 ##### Default Page; Information Disclosure
-![Screenshot 2026-08-19 235305](../../assets/Screenshot%202026-08-19%20235305.png)
+![Screenshot 2026-08-19 235305](../../../assets/Screenshot%202026-08-19%20235305.png)
 
 ##### BoltWire Page under /dev/
 
-![Pasted image 20260820011143](../../assets/Pasted%20image%2020260820011143.png)
+![Pasted image 20260820011143](../../../assets/Pasted%20image%2020260820011143.png)
 
 ##### User credentials under /dev/pages/
 
-![Pasted image 20260820011309](../../assets/Pasted%20image%2020260820011309.png)
+![Pasted image 20260820011309](../../../assets/Pasted%20image%2020260820011309.png)
 
 ##### Administrator credentials in /dev/pages/member.admin
 
-![Pasted image 20260820011431](../../assets/Pasted%20image%2020260820011431.png)
+![Pasted image 20260820011431](../../../assets/Pasted%20image%2020260820011431.png)
 
 ##### Information Disclosure (when accessed through admin account)
 
-![Pasted image 20260820011618](../../assets/Pasted%20image%2020260820011618.png)
+![Pasted image 20260820011618](../../../assets/Pasted%20image%2020260820011618.png)
 
 ##### Restricted file upload capabilities as an admin or editor (good)
 
-![Pasted image 20260820013333](../../assets/Pasted%20image%2020260820013333.png)
+![Pasted image 20260820013333](../../../assets/Pasted%20image%2020260820013333.png)
 
-![Screenshot 2026-08-20 013355](../../assets/Screenshot%202026-08-20%20013355.png)
+![Screenshot 2026-08-20 013355](../../../assets/Screenshot%202026-08-20%20013355.png)
 
 ##### Restrictions for uploading listed in Config section (an allow-list, not a deny-list - good)
 
-![Screenshot 2026-08-20 013725](../../assets/Screenshot%202026-08-20%20013725.png)
+![Screenshot 2026-08-20 013725](../../../assets/Screenshot%202026-08-20%20013725.png)
 
 ### via BurpSuite
 
@@ -151,13 +151,13 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 #### Information Disclosure
 
-![Pasted image 20260820000851](../../assets/Pasted%20image%2020260820000851.png)
+![Pasted image 20260820000851](../../../assets/Pasted%20image%2020260820000851.png)
 
 ## :8080
 
 #### Information Disclosure
 
-![Pasted image 20260820000626](../../assets/Pasted%20image%2020260820000626.png)
+![Pasted image 20260820000626](../../../assets/Pasted%20image%2020260820000626.png)
 
 # RPC/NFS (111/2049)
 
@@ -296,18 +296,18 @@ Apache 2.4.17 < 2.4.38 - 'apache2ctl graceful' 'logrotate' Local Privilege Escal
 BoltWire 6.03 - Local File Inclusion
 ```
 
-![Pasted image 20260821183859](../../assets/Pasted%20image%2020260821183859.png)
+![Pasted image 20260821183859](../../../assets/Pasted%20image%2020260821183859.png)
 ### via Browser
 
 #### Apache 2.4.38
 
-![Pasted image 20260821183227](../../assets/Pasted%20image%2020260821183227.png)
+![Pasted image 20260821183227](../../../assets/Pasted%20image%2020260821183227.png)
 
 #### BoltWire 6.03
 
 ##### Local File Inclusion - applied
 
-![Pasted image 20260821184108](../../assets/Pasted%20image%2020260821184108.png)
+![Pasted image 20260821184108](../../../assets/Pasted%20image%2020260821184108.png)
 
 ```
 root:x:0:0:root:/root:/bin/bash  

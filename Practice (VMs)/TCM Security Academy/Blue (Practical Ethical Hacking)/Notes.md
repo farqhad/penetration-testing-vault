@@ -44,7 +44,7 @@
 
 **via nmap: SMB 2.1**
 
-![Pasted image 20260815032005](../../assets/Pasted%20image%2020260815032005.png)
+![Pasted image 20260815032005](../../../assets/Pasted%20image%2020260815032005.png)
 
 **via metasploit (auxiliary/scanner/smb/smb_version): SMB 2.1**
 
@@ -52,7 +52,7 @@
 
 **via Wireshark: SMB2 (as in 2.x)**
 
-![Pasted image 20260815031000](../../assets/Pasted%20image%2020260815031000.png)
+![Pasted image 20260815031000](../../../assets/Pasted%20image%2020260815031000.png)
 
 ### Connection
 
@@ -64,35 +64,35 @@
 
 **Known Usernames (via enum4linux): administrator, guest, krbtgt, domain admins, root, bin, none**
 
-![Pasted image 20260815033654](../../assets/Pasted%20image%2020260815033654.png)
+![Pasted image 20260815033654](../../../assets/Pasted%20image%2020260815033654.png)
 
 **Workgroup Name (via enum4linux): WORKGROUP**
 
-![Pasted image 20260815033736](../../assets/Pasted%20image%2020260815033736.png)
+![Pasted image 20260815033736](../../../assets/Pasted%20image%2020260815033736.png)
 
 **Allows anonymous sessions (via enum4linux):**
 
-![Pasted image 20260815033859](../../assets/Pasted%20image%2020260815033859.png)
+![Pasted image 20260815033859](../../../assets/Pasted%20image%2020260815033859.png)
 
 **Doesn't have workgroups on SMB1 (via enum4linux):**
 
-![Pasted image 20260815034031](../../assets/Pasted%20image%2020260815034031.png)
+![Pasted image 20260815034031](../../../assets/Pasted%20image%2020260815034031.png)
 
 **Doesn't allow sessions over port 139, on which most likely the outdated SMB1 runs (via enum4linux):**
 
-![Pasted image 20260815034233](../../assets/Pasted%20image%2020260815034233.png)
+![Pasted image 20260815034233](../../../assets/Pasted%20image%2020260815034233.png)
 
 **Doesn't even have a resource on port 139 (via smbclient):**
 
-![Pasted image 20260815034423](../../assets/Pasted%20image%2020260815034423.png)
+![Pasted image 20260815034423](../../../assets/Pasted%20image%2020260815034423.png)
 
 ### Vulnerability Research (Manual)
 
 **Potentially vulnerable to EternalBlue Remote Code Execution (MS17-010)**
 
-![Pasted image 20260815041823](../../assets/Pasted%20image%2020260815041823.png)
+![Pasted image 20260815041823](../../../assets/Pasted%20image%2020260815041823.png)
 
-![Pasted image 20260815041853](../../assets/Pasted%20image%2020260815041853.png)
+![Pasted image 20260815041853](../../../assets/Pasted%20image%2020260815041853.png)
 
 ### Vulnerability Scanning (Nessus)
 
@@ -102,7 +102,7 @@
 
 **Potentially vulnerable to ETERNALBLUE, ETERNALCHAMPION, ETERNALROMANCE, and ETERNALSYNERGY (MS17-010): Remote Code Execution**
 
-![Pasted image 20260815041738](../../assets/Pasted%20image%2020260815041738.png)
+![Pasted image 20260815041738](../../../assets/Pasted%20image%2020260815041738.png)
 
 # RPC
 
@@ -114,7 +114,7 @@
 
 **- Anonymous access denied**
 
-![Pasted image 20260815032849](../../assets/Pasted%20image%2020260815032849.png)
+![Pasted image 20260815032849](../../../assets/Pasted%20image%2020260815032849.png)
 
 # Exploitation
 
@@ -122,8 +122,8 @@
 
 **The exploit failed on initial execution, but succeeded on the second attempt without payload modification.**
 
-![Pasted image 20260815043220](../../assets/Pasted%20image%2020260815043220.png)
+![Pasted image 20260815043220](../../../assets/Pasted%20image%2020260815043220.png)
 
-![Screenshot 2026-08-15 043100](../../assets/Screenshot%202026-08-15%20043100.png)
+![Screenshot 2026-08-15 043100](../../../assets/Screenshot%202026-08-15%20043100.png)
 
 ***forgot ipconfig in the end as proof of machine hacked***

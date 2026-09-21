@@ -38,15 +38,15 @@ PORT   STATE SERVICE VERSION
 
 ### Fuel CMS 1.4; Default Page
 
-![](../../assets/Pasted%20image%2020260828171553.png)
+![](../../../assets/Pasted%20image%2020260828171553.png)
 
 ### admin login endpoint apparent without dirbust (potentially working default credentials)
 
-![](../../assets/Pasted%20image%2020260828171929.png)
+![](../../../assets/Pasted%20image%2020260828171929.png)
 
 ### working default credentials on admin login page
 
-![](../../assets/Pasted%20image%2020260828172149.png)
+![](../../../assets/Pasted%20image%2020260828172149.png)
 
 ---
 
@@ -56,7 +56,7 @@ PORT   STATE SERVICE VERSION
 
 ### Fuel CMS 1.4 potentially vulnerable to RCE and Authenticated SQL Injection
 
-![](../../assets/Screenshot%20From%202026-08-28%2017-23-48.png)
+![](../../../assets/Screenshot%20From%202026-08-28%2017-23-48.png)
 
 ---
 
@@ -79,17 +79,17 @@ Copied to: /root/50477.py
 
 ### RCE successful
 
-![](../../assets/Screenshot%20From%202026-08-28%2018-24-01.png)
+![](../../../assets/Screenshot%20From%202026-08-28%2018-24-01.png)
 
 ### transferring a PHP reverse shell script
 
-![](../../assets/Pasted%20image%2020260828185837.png)
+![](../../../assets/Pasted%20image%2020260828185837.png)
 
 ### running it in the browser & connecting
 
-![](../../assets/Pasted%20image%2020260828190025.png)
+![](../../../assets/Pasted%20image%2020260828190025.png)
 
-![](../../assets/Pasted%20image%2020260828190043.png)
+![](../../../assets/Pasted%20image%2020260828190043.png)
 
 ---
 
@@ -101,7 +101,7 @@ Copied to: /root/50477.py
 
 #### transferred linPEAS
 
-![](../../assets/Pasted%20image%2020260828191456.png)
+![](../../../assets/Pasted%20image%2020260828191456.png)
 
 #### got nothing useful from PEAS
 

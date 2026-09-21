@@ -36,19 +36,19 @@
 
 ### Default Apache web page on Port 80 - PHP
 
-![Pasted image 20260813114144](../../assets/Pasted%20image%2020260813114144.png)
+![Pasted image 20260813114144](../../../assets/Pasted%20image%2020260813114144.png)
 
 ### Information disclosure - 404 Page
 
-![Pasted image 20260813114452](../../assets/Pasted%20image%2020260813114452.png)
+![Pasted image 20260813114452](../../../assets/Pasted%20image%2020260813114452.png)
 
 ### Server headers disclose version information
 
-![Pasted image 20260813114933](../../assets/Pasted%20image%2020260813114933.png)
+![Pasted image 20260813114933](../../../assets/Pasted%20image%2020260813114933.png)
 
 ### Webalizer 2.01 - httр://192.168.57.3/usage
 
-![Pasted image 20260813114539](../../assets/Pasted%20image%2020260813114539.png)
+![Pasted image 20260813114539](../../../assets/Pasted%20image%2020260813114539.png)
 
 # 139/TCP (SMB/NETBIOS-SSN)
 
@@ -60,7 +60,7 @@
 
 ### Samba 2.2.1a - displayed in WireShark
 
-![Pasted image 20260813115427](../../assets/Pasted%20image%2020260813115427.png)
+![Pasted image 20260813115427](../../../assets/Pasted%20image%2020260813115427.png)
 
 # Vulnerability Scans
 
@@ -92,16 +92,16 @@
 
 ### Non-root gained with OpenFuck + escalated to root with ptrace/kmod
 
-![Pasted image 20260815003348](../../assets/Pasted%20image%2020260815003348.png)
+![Pasted image 20260815003348](../../../assets/Pasted%20image%2020260815003348.png)
 
-![Pasted image 20260815004130](../../assets/Pasted%20image%2020260815004130.png)
+![Pasted image 20260815004130](../../../assets/Pasted%20image%2020260815004130.png)
 
 ### Root gained with SSH Hydra Brute-Force attack. Weak password for root: 1234. + undetected malicious activity (brute-force)
 
-![Pasted image 20260815004851](../../assets/Pasted%20image%2020260815004851.png)
+![Pasted image 20260815004851](../../../assets/Pasted%20image%2020260815004851.png)
 
-![Pasted image 20260815004947](../../assets/Pasted%20image%2020260815004947.png)
+![Pasted image 20260815004947](../../../assets/Pasted%20image%2020260815004947.png)
 
 ### `ifconfig` available with SSH, opening an opportunity for pivoting
 
-![Pasted image 20260815005042](../../assets/Pasted%20image%2020260815005042.png)
+![Pasted image 20260815005042](../../../assets/Pasted%20image%2020260815005042.png)

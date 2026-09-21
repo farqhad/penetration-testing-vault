@@ -47,15 +47,15 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 #### sensitive files revealed in /var/www/html/robots.txt
 
-![](../../assets/Pasted%20image%2020260921042636.png)
+![](../../../assets/Pasted%20image%2020260921042636.png)
 
 #### first flag revealed in /var/www/html/key-1-of-3.txt; obtain
 
-![](../../assets/Pasted%20image%2020260921042739.png)
+![](../../../assets/Pasted%20image%2020260921042739.png)
 
 #### wordlist in /var/www/html/fsocity.dic
 
-![](../../assets/Pasted%20image%2020260921042912.png)
+![](../../../assets/Pasted%20image%2020260921042912.png)
 
 #### `wget` the wordlist right away
 
@@ -86,22 +86,22 @@ fsocity.dic                            100%[====================================
 
 #### Wordpress login page on /var/www/html/wp-login.php
 
-![](../../assets/Pasted%20image%2020260921042403.png)
+![](../../../assets/Pasted%20image%2020260921042403.png)
 
 #### username enumeration possible via 'lost password' page
 #### note the `F:Invalid username or e-mail.`
 
-![](../../assets/Pasted%20image%2020260921042544.png)
+![](../../../assets/Pasted%20image%2020260921042544.png)
 
 ## via BurpSuite
 
 #### inspect the request via BurpSuite and remember the `user_login=` format
 
-![](../../assets/Pasted%20image%2020260921043540.png)
+![](../../../assets/Pasted%20image%2020260921043540.png)
 
 #### inspect the normal login request via BurpSuite; format: `log=&pwd=`
 
-![](../../assets/Pasted%20image%2020260921045617.png)
+![](../../../assets/Pasted%20image%2020260921045617.png)
 
 ## via Hydra
 
@@ -133,27 +133,27 @@ fsocity.dic                            100%[====================================
 
 #### entering the credentials leads to the WordPress admin panel
 
-![](../../assets/Pasted%20image%2020260921050629.png)
+![](../../../assets/Pasted%20image%2020260921050629.png)
 
 #### .php file upload restricted
 
-![](../../assets/Pasted%20image%2020260921050908.png)
+![](../../../assets/Pasted%20image%2020260921050908.png)
 
 #### after a bit of exploration: Edit Themes panel with modifiable source files
 
-![](../../assets/Pasted%20image%2020260921050941.png)
+![](../../../assets/Pasted%20image%2020260921050941.png)
 
 #### insert php reverse shell code into author-bio.php
 
-![](../../assets/Pasted%20image%2020260921051215.png)
+![](../../../assets/Pasted%20image%2020260921051215.png)
 
 #### find out where wordpress stores themes to send a GET request
 
-![](../../assets/Pasted%20image%2020260921051354.png)
+![](../../../assets/Pasted%20image%2020260921051354.png)
 
 #### succesfully connect with NetCat
 
-![](../../assets/Pasted%20image%2020260921052901.png)
+![](../../../assets/Pasted%20image%2020260921052901.png)
 
 #### insufficient privileges to obtain the second flag
 
