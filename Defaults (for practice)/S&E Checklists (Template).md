@@ -16,13 +16,13 @@
 
 ### General (always run first)
 
-- [ ] Routine nmap scan - [check nmap file for commands](../Theory/Reconnaissance/Scanning%20&%20Enumeration/Tools/NMAP.md)
+- [ ] Routine nmap scan - full routine at the end of the [nmap file](../Theory/Reconnaissance/Scanning%20&%20Enumeration/Tools/NMAP.md)
 - [ ] Find out every service + version (beyond nmap)
 
 ### 21 (FTP)
 
 - [ ] Triangulate version via Wireshark, then research that version for known vulnerabilities
-- [ ] `nmap -sV -sC` — the `ftp-anon` script auto-checks anonymous login and lists the root directory
+- [ ] nmap scan — the `ftp-anon` script auto-checks anonymous login and lists the root directory
 - [ ] Anonymous allowed? Confirm manually: `ftp <IP>` → user `anonymous`, password anything
 - [ ] Download everything readable: `wget ftp://anonymous:anonymous@<IP>/<file>` (or `get` / `mget *` inside the session)
 - [ ] Read every single file — readable files often hand over creds, internal notes, or hints toward other services

@@ -94,6 +94,7 @@
 
 ***usage:*** **nmap -sI 10.0.0.5 192.168.0.1**
 
+
 # Common Usage Combos
 
 ### The All-In-One (Slow, Loud & Lazy)
@@ -145,3 +146,12 @@
 **2)** **nmap --script smb-enum-shares -p 139,445 192.168.1.10** *(Attempts to list all available SMB shares and your access permissions)*
 
 **3)** **nmap --script vuln -p 139,445 192.168.1.10** *(Runs every script categorized as 'vuln' to check for critical flaws like MS17-010 EternalBlue)*
+
+# Full Routine (loud, thorough — fine for traditional pentest)
+
+```
+nmap -p- -A <ip>                    # all TCP: version, OS, default scripts
+nmap -sU --top-ports 20 <ip>        # UDP top ports
+nmap --script vuln <ip>             # NSE known-vuln sweep (when warranted)
+# + -iL <file> to scan multiple targets, -p for specific ports
+```
