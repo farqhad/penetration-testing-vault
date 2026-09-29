@@ -16,9 +16,8 @@
 
 ### General (always run first)
 
-- [ ] Full TCP port scan: `nmap -T4 -p- <IP>`
-- [ ] Version + default scripts + OS on the open ports: `nmap -T4 -sV -sC -p <ports> <IP>`
-- [ ] Write down every service + version — this list feeds the Vulnerability Research phase
+- [ ] Routine nmap scan - [check nmap file for commands](../Theory/Reconnaissance/Scanning%20&%20Enumeration/Tools/NMAP.md)
+- [ ] Find out every service + version (beyond nmap)
 
 ### 21 (FTP)
 
@@ -31,14 +30,14 @@
 
 ### 22 (SSH)
 
-- [ ] `nmap -sV -sC` — grab the OpenSSH version + protocol
+- [ ] grab the OpenSSH version + protocol
 - [ ] spray&pray
 - Note the protocol version: `1.x` / `1.99` means legacy SSHv1 support → old box, expect kex/cipher issues
 - Can't connect (kex / cipher errors)? → see [Legacy Machine Compatibility](../../Theory/Reference/Legacy%20Machine%20Compatibility.md)
 
 ### 80 / 443 (HTTP / HTTPS)
 
-- [ ] Identify tech + version: `nmap -sV -sC`, then WhatWeb / Wappalyzer (gives the full stack — server, DB, language, JS libraries)
+- [ ] Identify tech + version: WhatWeb / Wappalyzer (gives the full stack — server, DB, language, JS libraries)
 - [ ] Open the default page in a browser
 - [ ] View the page source
 - [ ] Hit the error pages for version / info leaks — 404 and 403 pages often disclose the exact server version
@@ -59,7 +58,7 @@
 
 ### 139 / 445 (SMB)
 
-- [ ] Get the SMB version + OS: `nmap -sV -sC -O`. Won't resolve? Cross-check with `msfconsole` → `auxiliary/scanner/smb/smb_version`, then Wireshark
+- [ ] Get the SMB version + OS; Won't resolve? Cross-check with `msfconsole` → `auxiliary/scanner/smb/smb_version`, then Wireshark
 - [ ] `enum4linux <IP>` — users, shares, workgroup, password policy, whether anonymous sessions are allowed
 - [ ] Check for critical SMB vulns: `nmap --script "smb-vuln*"` — EternalBlue (MS17-010), SMBGhost
 - [ ] Anonymous login to shares: `smbclient -L //<IP>/ -N` to list, then `smbclient //<IP>/<share> -N` (IPC$ often allows anon; C$/ADMIN$ usually don't)
@@ -70,7 +69,7 @@
 
 > rpcbind (111) is a switchboard mapping RPC program numbers to ports; NFS (2049) + the random high ports (mountd, nlockmgr) are all one NFS subsystem. Reference, not a step.
 
-- [ ] Note the NFS version from the scan (this comes from the initial `-sV` scan, before anything else) — **v3 present = the weak, trusting model**, which is usually what makes it exploitable
+- [ ] Note the NFS version from the scan (this comes from the initial nmap scan, before anything else) — **v3 present = the weak, trusting model**, which is usually what makes it exploitable
 - [ ] Query the switchboard: `rpcinfo <IP>` — dumps every registered RPC program, version, and port (no auth needed). Confirms NFS + mountd are present
 - [ ] List the exported shares: `showmount -e <IP>` — THE key NFS command. `*` on the right = any client can mount (jackpot); an IP/range = restricted
 - [ ] Mount it: `mkdir /mnt/nfs && sudo mount -t nfs <IP>:/export/path /mnt/nfs` — stubborn? force the weak version with `-o vers=3`
@@ -82,7 +81,7 @@
 
 > DNS is the phonebook: name ↔ IP. `-d` picks the target domain, `-t` picks the technique. A "nameserver" is the DNS server holding the records; `-n` aims your query at a *specific* one (the target's own, not your default) — required for zone transfers and internal/AD lookups. Reference, not a step.
 
-- [ ] Note the DNS version/software from the initial scan: `nmap -sV -sC -p 53 <IP>`
+- [ ] Note the DNS version/software from the initial nmap scan
 
 **Perspective A — you have the IP but NO domain (reverse first):**
 
