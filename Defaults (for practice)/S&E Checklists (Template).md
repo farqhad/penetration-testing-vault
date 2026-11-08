@@ -10,6 +10,8 @@
 
 **3) DEDUPE + PROFILE wordlists before brute-force. `sort x.dic|uniq`. Filter by length or password strength if the user isn't likely to have a trivial password. (time wasted: 1 day)** 
 
+**4) DON'T IGNORE WEIRD HIGH PORTS. A service on a random big-ass port (e.g. 41669) is often the intended path, not noise. (time wasted: gave up and watched the walkthrough)**
+
 ---
 
 > Run these top to bottom for every open port. When a step breaks, jump to [#When Stuck →](#When%20Stuck%20→) at the bottom.
